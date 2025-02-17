@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Hindi";
+    src: local("Arial");
+    /* Replace with actual Hindi font if needed */
+  }
+  
+  .font-hindi {
+    font-family: "Hindi", Arial, sans-serif;
+  }

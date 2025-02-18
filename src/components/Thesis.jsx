@@ -13,7 +13,7 @@ const Thesis = () => {
         <p className="lg:text-3xl font-semibold mr-28 md:text-xl mt-4 text-blue-900">
           The Indian SME segment has historically been underserved by the financial 
           markets – Transformative changes over the past decade have set the stage 
-          for significant growth.
+          for significant growth. Yashika
         </p>
       </div>
 

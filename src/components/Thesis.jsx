@@ -69,10 +69,10 @@ const Thesis = () => {
         <h2 className="text-2xl mx-10 md:text-2xl font-semibold uppercase leading-relaxed">
           "We are committed to being a trusted partner for unorthodox and emerging entrepreneurs in reshaping the industrial landscape."
         </h2>
-      </div>
+      </div> */
 
       {/* Core Sectors Section */}
-      <h2 className="text-center text-lg font-semibold uppercase mb-6">Core Sectors</h2>
+      /* <h2 className="text-center text-lg font-semibold uppercase mb-6">Core Sectors</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-teal-400 p-6 rounded-lg text-white">
           <h3 className="text-black font-semibold">Engineering</h3>
@@ -87,10 +87,14 @@ const Thesis = () => {
           <p className="mt-2">🛠️</p>
         </div>
         <div className="bg-blue-900 p-6 rounded-lg text-white">
-          <h3 className="font-semibold">Consumer</h3>
+          <h3 className="font-semibold">customer</h3>
           <p className="mt-2">🛍️</p>
         </div>
       </div>
+
+
+
+
     </div>
     </div>
    

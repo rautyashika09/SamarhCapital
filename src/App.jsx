@@ -1,3 +1,4 @@
+import Criteria from "./components/Criteria"
 import Header from "./components/Header"
 import HomePage from "./components/HomePage"
 import Thesis from "./components/Thesis"
@@ -7,6 +8,7 @@ export default function App() {
       <Header/>,
       <HomePage />
       < Thesis />
+      <Criteria />
     </div>
    
   )

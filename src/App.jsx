@@ -1,6 +1,7 @@
 import Criteria from "./components/Criteria"
 import Header from "./components/Header"
 import HomePage from "./components/HomePage"
+import Team from "./components/Team"
 import Thesis from "./components/Thesis"
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <HomePage />
       < Thesis />
       <Criteria />
+      <Team />
     </div>
    
   )

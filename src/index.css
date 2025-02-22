@@ -2,13 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: "Hindi";
     src: local("Arial");
     /* Replace with actual Hindi font if needed */
   }
+
+  @font-face {
+    font-family: "GOTHAM-BOOK";
+    src: url(../src/assets/fonts/GOTHAM-BOOK.OTF);
+  }
+
+  @font-face {
+    font-family: "GOTHAM-MEDIUM";
+    src: url(../src/assets/fonts/GOTHAM-MEDIUM.OTF);
+  }
+
+  @font-face {
+    font-family: "PLAYFAIRDISPLAY-BOLD";
+    src: url(../src/assets/fonts/PLAYFAIRDISPLAY-BOLD.TTF);
+  }
+
+  @font-face {
+    font-family: "PLAYFAIRDISPLAY-ITALIC";
+    src: url(../src/assets/fonts/PLAYFAIRDISPLAY-ITALIC.TTF);
+  }
+
+  @font-face {
+    font-family: "PLAYFAIRDISPLAY-REGULAR";
+    src: url(../src/assets/fonts/PLAYFAIRDISPLAY-REGULAR.TTF);
+  }
   
   .font-hindi {
     font-family: "Hindi", Arial, sans-serif;
   }
+  

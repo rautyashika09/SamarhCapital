@@ -53,7 +53,7 @@ const Team = () => {
           {/* Team Member 1 */}
           <div className="flex flex-col items-center">
             <img 
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              src="../src/assets/investors/sandeep.Jpg"
               alt="Sandeep Shenoy"
               className="w-48 h-48 rounded-full mb-6"
             />

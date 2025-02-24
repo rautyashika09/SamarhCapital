@@ -26,71 +26,105 @@ import React from 'react'
       const Criteria = () => {
   return (
     <div>
-        <div className="bg-gray-100 p-8 flex flex-col items-center">
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
+        <div className="p-8 flex flex-col items-center">
+      <div className="grid md:grid-cols-3 gap-2 ">
         {data.map((item, index) => (
           <div
             key={index}
-            className="text-center p-6 rounded-lg shadow-lg bg-white"
+            className="text-center p-6"
           >
             <div
-              className={`w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4 ${item.color}`}
+              className={`w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-4 ${item.color}`}
             >
               <span className="text-white text-3xl">{item.icon}</span>
             </div>
-            <h2 className="text-xl font-semibold text-blue-900 mb-2">
+            <h2 className="text-2xl lg:text-4xl font-playfairdisplayb text-blue-950 mb-2">
               {item.title}
             </h2>
-            <p className="text-gray-700 whitespace-pre-line">{item.description}</p>
+            <p className="text-black text-2xl lg:text-4xl font-playfairdisplay text-left whitespace-pre-line">{item.description}</p>
           </div>
         ))}
       </div>
-      <p className="mt-8 text-lg text-gray-800 font-medium">
+      <p className="mt-8 text-3xl lg:text-4xl font-playfairdisplay text-gray-800">
         Investing in the future: Backing companies poised to redefine their industries.
       </p>
     </div>
 
     {/* investment criteria */}
-    <div className="bg-gray-100 min-h-screen p-8 flex flex-col items-center">
-      <h1 className="text-3xl font-serif font-bold text-black mb-8">Investment criteria</h1>
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6">
+      <h1 className="text-5xl font-playfairdisplay text-black mb-8 self-start">Investment criteria</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
-        {/* Left Box */}
-        <div className="bg-teal-500 text-white p-6 rounded-lg shadow-lg">
-          <h2 className="font-bold">Disrupting the status quo:</h2>
-          <p>Supporting businesses with fresh perspectives and unorthodox approaches to age-old challenges.</p>
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 min-h-[500px]">
+        {/* Row 1 */}
+
+        <div className="bg-teal-400 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center">
+          Disrupting the status 
+          quo: Supporting 
+          businesses with 
+          fresh perspectives 
+          and unorthodox 
+          approaches to ageold challenges</p>
+          </div>        
+
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
-        
-        {/* Center Box */}
-        <div className="border border-gray-500 text-gray-700 p-6 rounded-lg shadow-lg">
-          <h2 className="font-bold">Growth-oriented entrepreneurs:</h2>
-          <p>Partnering with founders focused on sustainable growth.</p>
-        </div>
-        
-        {/* Right Box */}
-        <div className="border border-gray-500 text-gray-700 p-6 rounded-lg shadow-lg">
-          <h2 className="font-bold">Proven track records:</h2>
-          <p>Engaging with businesses that have validated concepts and demonstrated market appeal.</p>
-        </div>
+
+        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-cyan-400 shadow-md flex flex-col items-center">
+          <p className="text-center">
+          Growth-oriented 
+          entrepreneurs: 
+          Partnering with 
+          founders focused on 
+          sustainable growth.</p>
+          </div>  
+
+          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div>  
+
+        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-cyan-400 shadow-md flex flex-col items-center">
+          <p className="text-center">
+          Proven track records: 
+          Engaging with 
+          businesses that have 
+          validated concepts 
+          and demonstrated 
+          market appeal.</p>
+          </div> 
+        {/* Row 2 (Additional boxes for 4+4 layout) */}
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div> 
+
+        <div className="bg-blue-950 text-white text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center">
+          Scalability potential: 
+          Supporting teams 
+          with strong 
+          implementation 
+          skills and significant 
+          growth potential.</p>
+          </div>   
+
+          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+          </div> 
+
+          <div className="bg-teal-400 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center">
+          Disrupting the status 
+          quo: Supporting 
+          businesses with 
+          fresh perspectives 
+          and unorthodox 
+          approaches to ageold challenges</p>
+          </div>   
+
+          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+          </div> 
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl mt-6">
-        {/* Bottom Left Box */}
-        <div className="bg-blue-900 text-white p-6 rounded-lg shadow-lg">
-          <h2 className="font-bold">Scalability potential:</h2>
-          <p>Supporting teams with strong implementation skills and significant growth potential.</p>
-        </div>
-        
-        {/* Bottom Right Box */}
-        <div className="bg-teal-500 text-white p-6 rounded-lg shadow-lg">
-          <h2 className="font-bold">Beyond metrics:</h2>
-          <p>Collaborating with exceptional teams equipped with agility and a vision for enduring success.</p>
-        </div>
-      </div>
-      
-      <p className="text-xl font-serif text-center mt-12 max-w-4xl">
+
+      <h2 className="text-3xl lg:text-4xl lg:px-40 font-gotham font-thin text-black mt-12 text-center lg:pb-20">
         “EMPOWERING AMBITIOUS ENTREPRENEURS TO UNLOCK THEIR DREAMS AND DRIVE TRANSFORMATIVE CHANGE.”
-      </p>
+      </h2>
     </div>
     </div>
     

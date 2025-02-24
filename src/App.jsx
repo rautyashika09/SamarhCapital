@@ -11,7 +11,8 @@ import Media from "./components/Media"
 export default function App() {
   return (
     <div>
-      <Header/>,
+      <div className="bg-[#e6e6e6]">
+      <Header/>
       <HomePage />
       < Thesis />
       <Criteria />
@@ -20,6 +21,8 @@ export default function App() {
       <Media />
       <Contacts />
       <Footer />
+      </div>
+     
     </div>
   );
 }

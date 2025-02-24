@@ -10,7 +10,7 @@ function HomePage() {
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
             {/* Left Content */}
             <div className="lg:w-1/2">
-              <h1 className="text-8xl font-light mb-6">
+              <h1 className="text-5xl font-light mb-6 lg:text-8xl">
                 <span className="text-emerald-400 font-regular font-playfairdisplay">The Right Capital</span><br />
                 <span className="text-emerald-400 font-regular font-playfairdisplay">Partner To </span>
                 <span className="italic text-emerald-400 font-playfairdisplay">Unlock</span><br />
@@ -18,7 +18,7 @@ function HomePage() {
                 <span className="text-blue-950 italic font-playfairdisplay">Potential</span>
               </h1>
             </div>
-
+   
             {/* Right Content - Grid of Images */}
             <div className="lg:w-1/2 grid grid-cols-3">
               <div className="aspect-square">
@@ -36,8 +36,6 @@ function HomePage() {
               <div className="aspect-square bg-emerald-400 flex items-center justify-center">
                 <span className="text-white text-4xl">e<sup>x</sup></span>
               </div>
-              {/* <div className="aspect-square bg-navy-blue flex items-center justify-center">
-                //  <div className="text-white text-4xl">+</div>  </div>*/}
               <div className="aspect-square">
                 <img 
                   src="../src/assets/images/image2.jpg"
@@ -74,69 +72,67 @@ function HomePage() {
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="absolute bottom-10 left-52 transform -translate-x-1/2">
-            <div className="border border-gray-500 rounded-full p-4">
-              <ArrowDown className="w-14 h-14 text-gray-400" />
+          <div className="absolute mb-4 pt-11 left-52 transform -translate-x-1/2 lg:bottom-16 lg:left-56">
+            <div className="border border-blue-950 rounded-full p-4">
+              <ArrowDown className="w-16 h-16 text-blue-900" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Key Pointers Section */}
-      <section className="py-20 bg[#e6e6e6]">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-light text-gray-800 mb-16">Key Pointers/Messages</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card 1 */}
-            <div className="group">
-              <div className="bg-gray-50 p-6 rounded-lg border-2 border-transparent hover:border-emerald-400 transition-all">
-                <div className="w-16 h-16 bg-emerald-400 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-medium mb-2">Expanding professional networks.</h3>
-              </div>
-            </div>
 
-            {/* Card 2 */}
-            <div className="group">
-              <div className="bg-gray-50 p-6 rounded-lg border-2 border-transparent hover:border-emerald-400 transition-all">
-                <div className="w-16 h-16 bg-white border-2 border-gray-200 rounded-lg flex items-center justify-center mb-4">
-                  <Settings className="w-8 h-8 text-gray-600" />
-                </div>
-                <h3 className="text-lg font-medium mb-2">Implementing industry-leading practices.</h3>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="group">
-              <div className="bg-gray-50 p-6 rounded-lg border-2 border-transparent hover:border-emerald-400 transition-all">
-                <div className="w-16 h-16 bg-white border-2 border-gray-200 rounded-lg flex items-center justify-center mb-4">
-                  <LineChart className="w-8 h-8 text-gray-600" />
-                </div>
-                <h3 className="text-lg font-medium mb-2">Tailored growth strategies</h3>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="group">
-              <div className="bg-gray-50 p-6 rounded-lg border-2 border-transparent hover:border-emerald-400 transition-all">
-                <div className="w-16 h-16 bg-emerald-400 rounded-lg flex items-center justify-center mb-4">
-                  <Cog className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-medium mb-2">Offering specialized industry knowledge.</h3>
-              </div>
-            </div>
-          </div>
-
-          {/* Quote */}
-          <div className="mt-20 text-center max-w-4xl mx-auto">
-            <blockquote className="text-2xl font-light text-gray-700 italic">
-              "We are conscientious capitalists committed to fostering innovation and growth by bringing emerging and unrecognized entrepreneurs into the mainstream."
-            </blockquote>
-          </div>
+      <div className="min-h-screen bg-[#e6e6e6] flex flex-col  items-center justify-center p-6 my-10">
+      <h1 className="text-2xl font-bold text-gray-700 font-playfairdisplayb self-start mb-8">Key Pointers/Messages</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 min-h-[500px]">
+        {/* Row 1 */}
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
-      </section>
+
+        <div className="text-grey-700 text-2xl font-playfairdisplayb py-8 border-2 border-teal-500 rounded shadow-md flex flex-col items-center">
+          <p className="text-center pb-4">
+            Implementing industry-leading practices.
+          </p>
+          <img src="https://img.icons8.com/ios-filled/50/white/gear.png" alt="Implementing industry-leading practices" />
+        </div>
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+        <div className="text-grey-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-teal-500 shadow-md flex flex-col items-center">
+          <p className="text-center pb-4">
+            Tailored growth strategies.
+          </p>
+          <img src="https://img.icons8.com/ios-filled/50/white/presentation.png" alt="Tailored growth strategies" />
+
+        </div>
+        {/* Row 2 (Additional boxes for 4+4 layout) */}
+        <div className="bg-teal-500 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center">
+            Expanding Professional Networks.
+          </p>
+          <img src="https://img.icons8.com/ios-filled/50/006d77/team.png" alt="Building collaborative teams" />
+
+        </div>
+
+        <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+        <div className="bg-teal-500 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center">
+            Offering Specialized Industry Knowledge.
+          </p>
+          <img src="https://img.icons8.com/ios-filled/50/006d77/strategy.png" alt="Strategic partnerships" />
+
+        </div>
+        <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+      </div>
+
+      <h2 className="text-2xl font-playfairdisplayb text-black mt-12 mx-4 text-center lg:text-3xl">
+        “We are conscientious capitalists committed to fostering innovation and growth by bringing emerging and unrecognized entrepreneurs into the mainstream.”
+      </h2>
+    </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ const Team = () => {
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="lg:w-1/2 mb-10 lg:mb-0">
-          <h1 className="text-6xl font-light text-white mb-8">Our team</h1>
+          <h1 className="text-6xl font-light font-playfairdisplay text-white mb-8">Our team</h1>
           <p className="text-2xl text-white/90 leading-relaxed">
             At Samarsh Capital, our team combines deep investment expertise and
             strategic advisory experience. Led by seasoned professionals, we specialize in
@@ -53,7 +53,7 @@ const Team = () => {
           {/* Team Member 1 */}
           <div className="flex flex-col items-center">
             <img 
-              src="../src/assets/investors/sandeep.Jpg"
+              src="../src/assets/investors/sandeep.Jpg+"
               alt="Sandeep Shenoy"
               className="w-48 h-48 rounded-full mb-6"
             />

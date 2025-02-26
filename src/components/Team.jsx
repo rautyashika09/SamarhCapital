@@ -136,7 +136,7 @@ const Team = () => {
                 </a>
               </div>
               <p className="text-gray-700 max-w-md mt-4">
-                Mr. Kamath is leading expert on Indian consumer markets having previously been the Joint Managing Director at Jyothy Labs Ltd (JLL), a leading FMCG company in India. He brings a strong suite operational management experience to the table.
+                Mr. Kamath is leading expert on Indian consumer markets having previously been the Joint Managing Director at Jyothy Labs Ltd (JLL), a leading FMCG company in India. He brings a strong suite operational management experience to the table hello.
               </p>
             </div>
           </div>

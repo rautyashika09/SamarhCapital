@@ -2,34 +2,43 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>
-    <h1 className="text-[#FF6B00] text-xl mb-8">PORTFOLIO</h1>
+    <div className='px-20'>
+    <h1 className="text-[#f5700d] font-gothamb text-2xl my-8">PORTFOLIO</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
       <div className="relative">
         <img 
-          src="/investment-hand.jpg" 
+          src="../src/assets/images/image2.jpg" 
           alt="Investment Growth" 
           className="w-full h-auto rounded-lg shadow-lg"
         />
       </div>
-      <div className="flex items-center justify-end gap-4">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="bg-[#000066] w-32 h-32 flex items-center justify-center">
-            <img src="/plus.svg" alt="Plus" className="w-16 h-16" />
-          </div>
-          <div className="bg-[#00FFD1] w-32 h-32 flex items-center justify-center">
-            <img src="/infinity.svg" alt="Infinity" className="w-16 h-16" />
-          </div>
-          <div className="bg-[#00FFD1] w-32 h-32 flex items-center justify-center">
-            <img src="/arrow.svg" alt="Arrow" className="w-16 h-16" />
-          </div>
+      {/* <div className="flex items-center justify-center"> */}
+      <div className="grid grid-cols-2 lg:px-20 lg:pb-20">
+      <div className="aspect-square bg-blue-950 flex items-center justify-center">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+        <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
 
-    <h2 className="text-4xl font-playfair mb-8">Portfolio</h2>
+    <h2 className="text-4xl lg:font-5xl font-playfairdisplayb mb-8">Portfolio</h2>
 
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
     <div className="relative mb-8">
       <input
         type="search"
@@ -40,9 +49,7 @@ const Portfolio = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+      <div className="bg-white rounded-lg flex justify-between shadow-md p-6 hover:shadow-lg transition-shadow">
         <img 
           src="/agrileaf-logo.png" 
           alt="Agrileaf" 
@@ -57,7 +64,7 @@ const Portfolio = () => {
     </div>
 
     <div className="text-center mt-32 mb-16">
-      <h2 className="text-3xl font-bold mb-4">
+      <h2 className="text-4xl font-gotham font-light mb-4">
         "EMPOWERING AMBITIOUS ENTREPRENEURS TO UNLOCK<br />
         THEIR DREAMS AND DRIVE TRANSFORMATIVE CHANGE."
       </h2>

@@ -24,28 +24,51 @@ const Contacts = () => {
   return (
     <div className="min-h-screen bg-white">
        <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex flex-col items-center mb-12">
-          <h1 className="text-4xl font-playfair text-[#000066] mb-4">Contact Us</h1>
-          <div className="flex gap-4 justify-center mb-8">
-            <img src="/infinity.svg" alt="Infinity" className="w-16 h-16" />
-            <img src="/plus.svg" alt="Plus" className="w-16 h-16" />
-            <img src="/arrow.svg" alt="Arrow" className="w-16 h-16" />
-          </div>
-          <h2 className="text-3xl font-playfair text-center">Get in Touch</h2>
+       <section className="relative ">
+        <div className="container mx-auto px-4 py-20">
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+            {/* Left Content */}
+            <div className="lg:w-1/2">
+              <h1 className="text-3xl text-[#03045e] font-playfairdisplay font-light mb-6 lg:text-5xl">Contact Us</h1>
+              </div>
+
+               {/* Right Content - Grid of Images */}
+               <div className="lg:w-1/2 grid grid-cols-3">
+          <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-tl-[75px]">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+              <div className='my-16'>
+          <h2 className="text-4xl font-playfairdisplay text-center">Get in Touch</h2>
         </div>
         
 
         {/* contact form */}
 
-        <form onSubmit={handleSubmit} className="max-w-4xl mx-auto mb-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <form onSubmit={handleSubmit} className="max-w-6xl mx-auto mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <input
           type="text"
           name="name"
           placeholder="Enter your name"
           value={formData.name}
           onChange={handleChange}
-          className="bg-gray-100 rounded-md px-4 py-3 w-full"
+          className="bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
         <input
           type="tel"
@@ -53,7 +76,7 @@ const Contacts = () => {
           placeholder="Enter your phone number"
           value={formData.phone}
           onChange={handleChange}
-          className="bg-gray-100 rounded-md px-4 py-3 w-full"
+          className="bg-gray-100 bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
         <input
           type="email"
@@ -61,7 +84,7 @@ const Contacts = () => {
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
-          className="bg-gray-100 rounded-md px-4 py-3 w-full"
+          className="bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
       </div>
       <textarea
@@ -70,18 +93,18 @@ const Contacts = () => {
         value={formData.message}
         onChange={handleChange}
         rows="6"
-        className="w-full bg-gray-100 rounded-md px-4 py-3 mb-6"
+        className="w-full bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 mb-6"
       />
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-gray-200 text-gray-800 px-8 py-2 rounded hover:bg-gray-300 transition-colors"
+          className="bg-gray-200bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black px-8 py-2 rounded hover:bg-gray-300 transition-colors"
         >
           SEND IT NOW
         </button>
       </div>
     </form>
-  );
+  
 
   {/* contact info */}
 
@@ -111,6 +134,7 @@ const Contacts = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         </div>
+        <div className='flex justify-between gap-8 '>
         <div>
           <p className="font-medium mb-2">Corporate Office</p>
           <p className="text-gray-600">
@@ -119,7 +143,7 @@ const Contacts = () => {
             Mumbai - 400022
           </p>
         </div>
-        <div className="mt-4">
+        <div >
           <p className="font-medium mb-2">Registered Office</p>
           <p className="text-gray-600">
             No.1, 5th Floor, 1 Sobha,<br />
@@ -128,6 +152,8 @@ const Contacts = () => {
             Bangalore - 560001
           </p>
         </div>
+        </div>
+        
       </div>
     </div>
       </main>

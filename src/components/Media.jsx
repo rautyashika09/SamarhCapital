@@ -14,37 +14,38 @@ const Media = () => {
 
   return (
     <div className="min-h-screen bg-white">
-    {/* Hero Section */}
-    <section className="relative bg-emerald-400 min-h-screen">
-      <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between">
+   <section className="relative bg-[#00dbba] min-h-screen">
+      <div className="container px-20 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Content */}
-        <div className="lg:w-1/2 mb-10 lg:mb-0">
-          <h1 className="text-6xl font-light text-white mb-8">Our team</h1>
-          <p className="text-2xl text-white/90 leading-relaxed">
-            At Samarsh Capital, our team combines deep investment expertise and
-            strategic advisory experience. Led by seasoned professionals, we specialize in
-            identifying high-potential opportunities and nurturing them to deliver long-term value.
-          </p>
+        <div className="lg:w-1/2 mb-10 lg:pl-10 lg:mb-0">
+          <h1 className="text-6xl lg:text-7xl font-playfairdisplay text-[black] mb-6">Media and <span />
+          Press releases</h1>
         </div>
 
         {/* Right Content - Grid of Images */}
-        <div className="lg:w-1/3 grid grid-cols-2 gap-4">
-          <div className="bg-white rounded-full p-8">
-            <div className="w-16 h-16 bg-navy-blue rounded-full"></div>
-          </div>
-          <div className="bg-navy-blue rounded-full p-8">
-            <span className="text-4xl text-white">e<sup>x</sup></span>
-          </div>
-          <div className="bg-navy-blue rounded-full p-8">
-            <div className="w-16 h-16 bg-emerald-400"></div>
-          </div>
-          <div className="overflow-hidden rounded-full">
-            <img 
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-              alt="Team collaboration"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="py-20 lg:w-1/3 grid grid-cols-2">
+        <div className="aspect-square bg-white flex items-center justify-center rounded-full">
+                <div className="text-blue-950 w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square bg-blue-950 flex items-center justify-center rounded-b-full">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square bg-blue-950 flex items-center justify-center rounded-br-[75px]">
+                <div className="text-white w-12 h-12 transform ">
+                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                </div>
+              </div>
+              <div className="aspect-square">
+                <img 
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+                  alt="Business analysis"
+                  className="w-full h-full object-cover rounded-t-full"
+                />
+              </div>
         </div>
 
         {/* Scroll Down Indicator */}
@@ -61,7 +62,7 @@ const Media = () => {
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {articles.map((article, index) => (
           <div key={index} className="flex flex-col">
-            <div className="w-full h-64 bg-gray-300"></div>
+            <div className="w-full h-72 bg-gray-300"></div>
             <p className="mt-4 text-lg font-serif text-black">{article.title}</p>
           </div>
         ))}

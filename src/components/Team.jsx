@@ -3,7 +3,7 @@ import { ArrowDown, Linkedin } from 'lucide-react';
 
 const Team = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div id='team' className="min-h-screen bg-white">
     {/* Hero Section */}
     <section className="relative bg-[#00dbba] min-h-screen">
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center justify-between">
@@ -18,20 +18,20 @@ const Team = () => {
         </div>
 
         {/* Right Content - Grid of Images */}
-        <div className="lg:w-1/3 grid grid-cols-2">
-        <div className="aspect-square bg-white flex items-center justify-center rounded-full">
-                <div className="text-blue-950 w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+        <div className="lg:w-1/3 grid grid-cols-2 pr-10">
+        <div className="aspect-square flex items-center justify-center rounded-full">
+                <div className="text-[#03045e] transform ">
+                  <img src="../src/assets/InImage/wPlus.png" alt="arrow" />
                 </div>
               </div>
-              <div className="aspect-square bg-blue-950 flex items-center justify-center rounded-b-full">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+              <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-b-full">
+                <div className="text-white transform p-4">
+                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
-              <div className="aspect-square bg-blue-950 flex items-center justify-center rounded-br-[75px]">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+              <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/tInfinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square">

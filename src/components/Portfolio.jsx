@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div className='px-20'>
+    <div id='porfolia' className='px-20 bg-[#ebe6e0]'>
     <h1 className="text-[#f5700d] font-gothamb text-2xl my-8">PORTFOLIO</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -15,21 +15,21 @@ const Portfolio = () => {
       </div>
       {/* <div className="flex items-center justify-center"> */}
       <div className="grid grid-cols-2 lg:px-20 lg:pb-20">
-      <div className="aspect-square bg-blue-950 flex items-center justify-center">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+      <div className="aspect-square bg-[#03045e] flex items-center justify-center">
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
               <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
         <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/infinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/arrow.png" alt="arrow" />
                 </div>
               </div>
         </div>
@@ -49,17 +49,17 @@ const Portfolio = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
-      <div className="bg-white rounded-lg flex justify-between shadow-md p-6 hover:shadow-lg transition-shadow">
+      <div className="rounded-lg flex justify-between shadow-md px-2 pt-6 pb-20 hover:shadow-lg transition-shadow">
         <img 
-          src="/agrileaf-logo.png" 
+          src="../src/assets/InImage/Agrilife.png" 
           alt="Agrileaf" 
-          className="w-24 h-24 mx-auto mb-4"
+          className="w-28 h-28 p-1 text-start rounded-full border-2 self-start "
         />
-        <h3 className="text-2xl font-playfair text-center">Agrileaf</h3>
+        <h3 className="text-3xl font-playfairdisplay text-end">Agrileaf</h3>
       </div>
-      <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+      <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       </div>
-      <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+      <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       </div>
     </div>
 

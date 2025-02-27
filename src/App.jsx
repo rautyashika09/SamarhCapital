@@ -11,7 +11,7 @@ import Media from "./components/Media"
 export default function App() {
   return (
     <div>
-      <div className="bg-[#e6e6e6]">
+      <div className="bg-[#ebe6e0]">
       <Header/>
       <HomePage />
       < Thesis />

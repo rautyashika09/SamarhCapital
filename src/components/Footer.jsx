@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="mx-auto py-8 my-6">
+    <footer id='footer' className="mx-auto pt-8 mt-6 mb-10 bg-[#ebe6e0]">
     <div className="">
       <div className="flex justify-center space-x-6 mb-4">
         <a href="#" className="text-[white] h-10 w-10 bg-blue-950 rounded-full pt-2 pl-2 text-center hover:opacity-80">
@@ -27,7 +27,7 @@ const Footer = () => {
         </a>
       </div>
       </div>
-      <p className="bg-white text-center font-gothamb text-black text-2xl">
+      <p className="bg-white py-4 text-center font-gothamb text-black text-2xl">
         Copyright © 2025 Samarsh Capital. All Rights Reserved.
       </p>
     

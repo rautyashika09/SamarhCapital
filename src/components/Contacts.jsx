@@ -22,7 +22,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div id='contact' className="min-h-screen bg-[#f5f3ef]">
        <main className="max-w-7xl mx-auto px-4 py-8">
        <section className="relative ">
         <div className="container mx-auto px-4 py-20">
@@ -35,18 +35,18 @@ const Contacts = () => {
                {/* Right Content - Grid of Images */}
                <div className="lg:w-1/2 grid grid-cols-3">
           <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/infinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-tl-[75px]">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
-                <div className="text-white w-12 h-12 transform ">
-                  <img src="../src/assets/images/img1.png" alt="arrow" />
+                <div className="text-white p-4 transform ">
+                  <img src="../src/assets/InImage/arrow.png" alt="arrow" />
                 </div>
               </div>
               </div>
@@ -68,7 +68,7 @@ const Contacts = () => {
           placeholder="Enter your name"
           value={formData.name}
           onChange={handleChange}
-          className="bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
+          className="bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
         <input
           type="tel"
@@ -76,7 +76,7 @@ const Contacts = () => {
           placeholder="Enter your phone number"
           value={formData.phone}
           onChange={handleChange}
-          className="bg-gray-100 bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
+          className="bg-[#e2e3e2] bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
         <input
           type="email"
@@ -84,7 +84,7 @@ const Contacts = () => {
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
-          className="bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
+          className="bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
       </div>
       <textarea
@@ -93,12 +93,12 @@ const Contacts = () => {
         value={formData.message}
         onChange={handleChange}
         rows="6"
-        className="w-full bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 mb-6"
+        className="w-full bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 mb-6"
       />
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-gray-200bg-gray-100 font-playfairdisplay text-2xl text-black border-2 border-black px-8 py-2 rounded hover:bg-gray-300 transition-colors"
+          className="bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black px-8 py-2 rounded hover:bg-gray-300 transition-colors"
         >
           SEND IT NOW
         </button>

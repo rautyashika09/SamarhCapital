@@ -1,31 +1,34 @@
-import React from 'react'
+import React from 'react';
+import eyes from "../assets/InImage/eyes.png";
+import bow from "../assets/InImage/bow.png";
+import hands from "../assets/InImage/hands.png";
 
     const data = [
         {
           title: "Vision",
           description:
             "To build a vibrant ecosystem that empowers SMEs to lead innovation, transform industries, and shape a prosperous future for India.",
-          icon: "\ud83d\udc41", // Placeholder for an actual SVG or image
-          color: "bg-blue-900",
+             image: eyes ,// Placeholder for an actual SVG or image
+         color: "bg-[#03045e]"
         },
         {
           title: "Purpose",
           description:
-            "\"Build companies on a foundation of integrity and purposeful growth.\"\n\n• Help transformative SMEs realise their full potential.\n• Revolutionize SME investment by being a committed and dependable partner.",
-          icon: "\ud83c\udfaf", // Placeholder icon
-          color: "bg-teal-400",
+            "Build companies on a foundation of integrity and purposeful growth.\"\n\n• Help transformative SMEs realise their full potential.\n• Revolutionize SME investment by being a committed and dependable partner.",
+          image: bow, // Placeholder image
+          color: "bg-[#00dbba]",
         },
         {
           title: "Culture",
           description:
             "• Foster collaboration through synergistic skillsets.\n• Empower enterprising individuals driven by our vision.\n• Embrace continuous growth and learning to enhance expertise and adapt to challenges.",
-          icon: "\ud83d\udc65", // Placeholder icon
-          color: "bg-blue-900",
+          image: hands, // Placeholder icon
+          color: "bg-[#03045e]",
         },
       ];
       const Criteria = () => {
   return (
-    <div>
+    <div className='#ebe6e0'>
         <div className="p-8 flex flex-col items-center">
       <div className="grid md:grid-cols-3 gap-2 ">
         {data.map((item, index) => (
@@ -34,11 +37,16 @@ import React from 'react'
             className="text-center p-6"
           >
             <div
-              className={`w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-4 ${item.color}`}
+              className={`w-36 h-36 flex items-center justify-center rounded-full mx-auto my-4 p-4 ${item.color}`}
             >
-              <span className="text-white text-3xl">{item.icon}</span>
+              <img
+                 src={item.image}
+                  w-full 
+                  height-full 
+                  alt={item.title}
+                  className='rounded text-5xl' />
             </div>
-            <h2 className="text-2xl lg:text-4xl font-playfairdisplayb text-blue-950 mb-2">
+            <h2 className="text-2xl lg:text-4xl font-playfairdisplayb text-[#03045e] mb-2">
               {item.title}
             </h2>
             <p className="text-black text-2xl lg:text-4xl font-playfairdisplay text-left whitespace-pre-line">{item.description}</p>
@@ -51,26 +59,26 @@ import React from 'react'
     </div>
 
     {/* investment criteria */}
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen bg-[#ebe6e0] flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-playfairdisplay text-black mb-8 self-start">Investment criteria</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 min-h-[500px]">
         {/* Row 1 */}
 
-        <div className="bg-teal-400 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+        <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Disrupting the status 
           quo: Supporting 
           businesses with 
           fresh perspectives 
           and unorthodox 
-          approaches to ageold challenges</p>
+          approaches to age-old challenges</p>
           </div>        
 
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
-        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-cyan-400 shadow-md flex flex-col items-center">
+        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
           <p className="text-center">
           Growth-oriented 
           entrepreneurs: 
@@ -82,7 +90,7 @@ import React from 'react'
           <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>  
 
-        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-cyan-400 shadow-md flex flex-col items-center">
+        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
           <p className="text-center">
           Proven track records: 
           Engaging with 
@@ -95,7 +103,7 @@ import React from 'react'
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div> 
 
-        <div className="bg-blue-950 text-white text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+        <div className="bg-[#03045e] text-white text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Scalability potential: 
           Supporting teams 
@@ -108,7 +116,7 @@ import React from 'react'
           <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
           </div> 
 
-          <div className="bg-teal-400 text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Disrupting the status 
           quo: Supporting 

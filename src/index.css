@@ -37,3 +37,6 @@
     font-family: "Hindi", Arial, sans-serif;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }

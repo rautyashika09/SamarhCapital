@@ -6,13 +6,13 @@ function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <header className="bg-[#e6e6e6]">
+    <header>
       {/* Top Bar */}
-      <div className="bg-[#e6e6e6] py-2">
+      <div className="py-2">
         <div className="container mx-auto px-4 flex justify-end items-center space-x-4 text-sm">
-          <a href="/contact" className="text-gray-600 hover:text-gray-900">CONTACT US</a>
+          <a href="#contact" className="text-gray-600 hover:text-gray-900">CONTACT US</a>
           <span className="text-gray-300">|</span>
-          <a href="/enquiry" className="text-gray-600 hover:text-gray-900">ENQUIRY</a>
+          <a href="#footer" className="text-gray-600 hover:text-gray-900">ENQUIRY</a>
           <button 
             onClick={() => setIsSearchOpen(!isSearchOpen)}
             className="ml-2 p-1 hover:bg-gray-200 rounded-full"
@@ -47,12 +47,12 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="/about" className="text-gray-700 hover:text-blue-600">ABOUT US</a>
-            <a href="/charter" className="text-gray-700 hover:text-blue-600">OUR CHARTER</a>
-            <a href="/team" className="text-gray-700 hover:text-blue-600">OUR TEAM</a>
-            <a href="/portfolio" className="text-gray-700 hover:text-blue-600">PORTFOLIO</a>
-            <a href="/media" className="text-gray-700 hover:text-blue-600">MEDIA</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-600">CONTACT US</a>
+            <a href="#about" className="text-gray-700 hover:text-blue-600">ABOUT US</a>
+            <a href="#charter" className="text-gray-700 hover:text-blue-600">OUR CHARTER</a>
+            <a href="#team" className="text-gray-700 hover:text-blue-600">OUR TEAM</a>
+            <a href="#portfolio" className="text-gray-700 hover:text-blue-600">PORTFOLIO</a>
+            <a href="#media" className="text-gray-700 hover:text-blue-600">MEDIA</a>
+            <a href="#contact" className="text-gray-700 hover:text-blue-600">CONTACT US</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -68,12 +68,12 @@ function Header() {
         {isMenuOpen && (
           <nav className="lg:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
-              <a href="/about" className="text-gray-700 hover:text-blue-600">ABOUT US</a>
-              <a href="/charter" className="text-gray-700 hover:text-blue-600">OUR CHARTER</a>
-              <a href="/team" className="text-gray-700 hover:text-blue-600">OUR TEAM</a>
-              <a href="/portfolio" className="text-gray-700 hover:text-blue-600">PORTFOLIO</a>
-              <a href="/media" className="text-gray-700 hover:text-blue-600">MEDIA</a>
-              <a href="/contact" className="text-gray-700 hover:text-blue-600">CONTACT US</a>
+              <a href="#about" className="text-gray-700 hover:text-blue-600">ABOUT US</a>
+              <a href="#charter" className="text-gray-700 hover:text-blue-600">OUR CHARTER</a>
+              <a href="#team" className="text-gray-700 hover:text-blue-600">OUR TEAM</a>
+              <a href="#portfolio" className="text-gray-700 hover:text-blue-600">PORTFOLIO</a>
+              <a href="#media" className="text-gray-700 hover:text-blue-600">MEDIA</a>
+              <a href="#contact" className="text-gray-700 hover:text-blue-600">CONTACT US</a>
             </div>
           </nav>
         )}

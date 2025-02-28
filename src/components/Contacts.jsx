@@ -65,7 +65,8 @@ const Contacts = () => {
         {/* contact form */}
 
         <form onSubmit={handleSubmit} className="max-w-6xl mx-auto mb-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div
+      className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <input
           type="text"
           name="name"
@@ -99,14 +100,18 @@ const Contacts = () => {
         rows="6"
         className="w-full bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 mb-6"
       />
-      <div className="flex justify-center">
+      <motion.div
+       whileInView={{opacity:1, y: 0}}
+       initial={{ opacity: 0, y: -100 }}
+       transition={{ duration: 0.5}}
+      className="flex justify-center">
         <button
           type="submit"
           className="bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black px-8 py-2 rounded hover:bg-gray-300 transition-colors"
         >
           SEND IT NOW
         </button>
-      </div>
+      </motion.div>
     </form>
   
 

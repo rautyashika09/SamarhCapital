@@ -129,15 +129,16 @@ function HomePage() {
         {/* Row 1 */}
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
-
-        <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 0.5,
-        }}
+         <motion.div
+                    animate={{
+                      rotateY: 180, 
+                    }}
+                    transition={{
+                      duration: 2, 
+                      repeat: 1, 
+                      repeatType: "reverse", 
+                      ease: "easeInOut", 
+                    }}
         className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center">
           <p className="text-center pb-10">
             Implementing industry-leading practices.
@@ -147,15 +148,16 @@ function HomePage() {
         </motion.div>
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
-
-        <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 0.5,
-        }}
+ <motion.div
+            animate={{
+              rotateY: 180, 
+            }}
+            transition={{
+              duration: 2, 
+              repeat: 1, 
+              repeatType: "reverse", 
+              ease: "easeInOut", 
+            }}
         className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
           <p className="text-center pb-10">
             Tailored growth strategies.
@@ -166,13 +168,15 @@ function HomePage() {
         </motion.div>
         {/* Row 2 (Additional boxes for 4+4 layout) */}
         <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 1,
-        }}
+                   animate={{
+                     rotateY: 180, 
+                   }}
+                   transition={{
+                     duration: 2, 
+                     repeat: 1, 
+                     repeatType: "reverse", 
+                     ease: "easeInOut", 
+                   }}
         className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center pb-10">
             Expanding Professional Networks.
@@ -184,15 +188,16 @@ function HomePage() {
 
         <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
-
-        <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 1,
-        }}
+ <motion.div
+            animate={{
+              rotateY: 180, 
+            }}
+            transition={{
+              duration: 2, 
+              repeat: 1, 
+              repeatType: "reverse", 
+              ease: "easeInOut", 
+            }}
         className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center pb-10">
             Offering Specialized Industry Knowledge.
@@ -205,7 +210,7 @@ function HomePage() {
         </div>
       </div>
 
-      <h2 className="text-lg lg:text-2xl font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl">
+      <h2 className="text-lg font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl">
         “We are conscientious capitalists committed to fostering innovation and growth by bringing emerging and unrecognized entrepreneurs into the mainstream.”
       </h2>
     </div>

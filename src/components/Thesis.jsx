@@ -107,14 +107,13 @@ const Thesis = () => {
           <img src="../src/assets/InImage/home.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 self-start ' />
         </motion.div>
         <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 0.5,
-        }}
-        viewport={{ once: true }}
+      initial={{ scale: 0.5 }} 
+      whileInView={{ scale: 1 }} 
+      transition={{
+        duration: 0.5,
+        ease: "easeInOut", 
+      }}
+      viewport={{ once: true }}
         className="bg-[#00dbba] text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
           <p className="text-center pb-16">
           Availability of 
@@ -124,14 +123,13 @@ const Thesis = () => {
           <img src="../src/assets/InImage/screw.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 self-start pl-2 pb-2' />
         </motion.div>
         <motion.div
-        initial={{ opacity: 0 }} // Start fully visible
-        animate={{ opacity: 1 }} // Fade out to fully hidden
-        transition={{
-          duration: 2, // Animation duration
-          ease: "easeInOut", // Smooth easing
-          delay: 1,
-        }}
-        viewport={{ once: true }}
+       initial={{ scale: 0.5 }} 
+       whileInView={{ scale: 1 }} 
+       transition={{
+         duration: 0.5,
+         ease: "easeInOut", 
+       }}
+       viewport={{ once: true }}
         className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
           <p className="text-center pb-16 px-1">
           Evolving business 

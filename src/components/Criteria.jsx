@@ -2,6 +2,7 @@ import React from 'react';
 import eyes from "../assets/InImage/eyes.png";
 import bow from "../assets/InImage/bow.png";
 import hands from "../assets/InImage/hands.png";
+import { motion } from "framer-motion";
 
     const data = [
         {
@@ -46,10 +47,18 @@ import hands from "../assets/InImage/hands.png";
                   alt={item.title}
                   className='rounded text-5xl' />
             </div>
-            <h2 className="text-2xl lg:text-4xl font-playfairdisplayb text-[#03045e] mb-2">
+            <motion.h2
+            whileInView={{opacity:1, x: 0}}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 0.5}}
+            className="text-2xl lg:text-4xl font-playfairdisplayb text-[#03045e] mb-2">
               {item.title}
-            </h2>
-            <p className="text-black text-2xl lg:text-4xl font-playfairdisplay text-left whitespace-pre-line">{item.description}</p>
+            </motion.h2>
+            <motion.p
+            whileInView={{opacity:1, x: 0}}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1}}
+            className="text-black text-2xl lg:text-4xl font-playfairdisplay text-left whitespace-pre-line">{item.description}</motion.p>
           </div>
         ))}
       </div>
@@ -62,10 +71,10 @@ import hands from "../assets/InImage/hands.png";
     <div className="min-h-screen bg-[#ebe6e0] flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-playfairdisplay text-black mb-8 self-start">Investment criteria</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto lg:min-h-[500px]">
         {/* Row 1 */}
 
-        <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+        <div className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Disrupting the status 
           quo: Supporting 
@@ -78,7 +87,7 @@ import hands from "../assets/InImage/hands.png";
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
-        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
+        <div className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
           <p className="text-center">
           Growth-oriented 
           entrepreneurs: 
@@ -90,7 +99,7 @@ import hands from "../assets/InImage/hands.png";
           <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>  
 
-        <div className="text-gray-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
+        <div className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
           <p className="text-center">
           Proven track records: 
           Engaging with 
@@ -103,7 +112,7 @@ import hands from "../assets/InImage/hands.png";
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div> 
 
-        <div className="bg-[#03045e] text-white text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+        <div className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Scalability potential: 
           Supporting teams 
@@ -116,7 +125,7 @@ import hands from "../assets/InImage/hands.png";
           <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
           </div> 
 
-          <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
+          <div className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
           <p className="text-center">
           Disrupting the status 
           quo: Supporting 

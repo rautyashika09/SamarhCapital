@@ -1,5 +1,15 @@
 import React from 'react';
 import { ArrowDown, Users, Settings, LineChart, Cog } from 'lucide-react';
+import { motion } from "framer-motion";
+
+const container = (delay) => ({
+  hidden: {x:-100, opacity: 0},
+  visible: {
+    x:0,
+    opacity: 1,
+    transition: { duration:0.5, delay:delay },
+  },
+});
 
 function HomePage() {
   return (
@@ -11,16 +21,40 @@ function HomePage() {
             {/* Left Content */}
             <div className="lg:w-1/2">
               <h1 className="text-5xl font-light mb-6 lg:text-8xl">
-                <span className="text-[#00dbba] font-regular font-playfairdisplay">The Right Capital</span><br />
-                <span className="text-[#00dbba] font-regular font-playfairdisplay">Partner To </span>
-                <span className="italic text-[#00dbba] font-playfairdisplay">Unlock</span><br />
-                <span className="text-[#00dbba] font-playfairdisplay">Your </span>
-                <span className="text-[#03045e] italic font-playfairdisplay">Potential</span>
+                <motion.span
+                variants={container(0)}
+                initial="hidden"
+                animate="visible"
+                className="text-[#00dbba] font-regular font-playfairdisplay">The Right Capital</motion.span><br />
+                 <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className="text-[#00dbba] font-regular font-playfairdisplay">Partner To </motion.span>
+               <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className="italic text-[#00dbba] font-playfairdisplay">Unlock</motion.span><br />
+               <motion.span
+                variants={container(1)}
+                initial="hidden"
+                animate="visible"
+                className="text-[#00dbba] font-playfairdisplay">Your </motion.span>
+               <motion.span
+                variants={container(1)}
+                initial="hidden"
+                animate="visible"
+                 className="text-[#03045e] italic font-playfairdisplay">Potential</motion.span>
               </h1>
             </div>
    
             {/* Right Content - Grid of Images */}
-            <div className="lg:w-1/2 grid grid-cols-3">
+            <motion.div
+            initial={{ x: 100, opacity:0 }}
+            animate={{ x: 0, opacity:1 }}
+            transition={{ duration: 1, delay:1.2 }}
+            className="lg:w-1/2 grid grid-cols-3">
               <div className="aspect-square">
                 <img 
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
@@ -74,13 +108,13 @@ function HomePage() {
                   <img src="../src/assets/InImage/infinity.png" alt="infinity" />
                 </div>
                  </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Scroll Down Indicator */}
           <div className="absolute mb-4 pt-11 left-52 transform -translate-x-1/2 lg:bottom-16 lg:left-56">
             <div className="border border-[#03045e] rounded-full p-4">
-              <ArrowDown className="w-16 h-16 text-[#03045e]" />
+              <ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" />
             </div>
           </div>
         </div>
@@ -91,52 +125,87 @@ function HomePage() {
       <div className="min-h-screen bg-[#e6e6e6] flex flex-col  items-center justify-center p-6 mx-20 my-10">
       <h1 className="text-2xl lg:text-3xl text-black font-playfairdisplay self-start mb-8">Key Pointers/Messages</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:min-h-[500px]">
         {/* Row 1 */}
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
-        <div className="text-grey-700 text-2xl font-playfairdisplayb py-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center">
-          <p className="text-center pb-4">
+        <motion.div
+        initial={{ opacity: 0 }} // Start fully visible
+        animate={{ opacity: 1 }} // Fade out to fully hidden
+        transition={{
+          duration: 2, // Animation duration
+          ease: "easeInOut", // Smooth easing
+          delay: 0.5,
+        }}
+        className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center">
+          <p className="text-center pb-10">
             Implementing industry-leading practices.
           </p>
-          <img className='text-[#00dbba] h-full w-full' 
-          src="../src/assets/InImage/hand.png" alt="Implementing industry-leading practices" />
-        </div>
+          <img className='text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start ' 
+          src="../src/assets/InImage/impliment.png" alt="Implementing industry-leading practices" />
+        </motion.div>
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
-        <div className="text-grey-700 text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
-          <p className="text-center pb-4">
+        <motion.div
+        initial={{ opacity: 0 }} // Start fully visible
+        animate={{ opacity: 1 }} // Fade out to fully hidden
+        transition={{
+          duration: 2, // Animation duration
+          ease: "easeInOut", // Smooth easing
+          delay: 0.5,
+        }}
+        className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
+          <p className="text-center pb-10">
             Tailored growth strategies.
           </p>
-          <img src="https://img.icons8.com/ios-filled/50/white/presentation.png" alt="Tailored growth strategies" />
+          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
+           src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
 
-        </div>
+        </motion.div>
         {/* Row 2 (Additional boxes for 4+4 layout) */}
-        <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center">
+        <motion.div
+        initial={{ opacity: 0 }} // Start fully visible
+        animate={{ opacity: 1 }} // Fade out to fully hidden
+        transition={{
+          duration: 2, // Animation duration
+          ease: "easeInOut", // Smooth easing
+          delay: 1,
+        }}
+        className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center pb-10">
             Expanding Professional Networks.
           </p>
-          <img src="https://img.icons8.com/ios-filled/50/006d77/team.png" alt="Building collaborative teams" />
+          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
+          src="../src/assets/InImage/expanding.png" alt="Building collaborative teams" />
 
-        </div>
+        </motion.div>
 
         <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
-        <div className="bg-[#00dbba] text-black text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center">
+        <motion.div
+        initial={{ opacity: 0 }} // Start fully visible
+        animate={{ opacity: 1 }} // Fade out to fully hidden
+        transition={{
+          duration: 2, // Animation duration
+          ease: "easeInOut", // Smooth easing
+          delay: 1,
+        }}
+        className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
+          <p className="text-center pb-10">
             Offering Specialized Industry Knowledge.
           </p>
-          <img src="https://img.icons8.com/ios-filled/50/006d77/strategy.png" alt="Strategic partnerships" />
+          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
+          src="../src/assets/InImage/offering.png" alt="Strategic partnerships" />
 
-        </div>
+        </motion.div>
         <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
       </div>
 
-      <h2 className="text-2xl font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl">
+      <h2 className="text-lg lg:text-2xl font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl">
         “We are conscientious capitalists committed to fostering innovation and growth by bringing emerging and unrecognized entrepreneurs into the mainstream.”
       </h2>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { motion } from "framer-motion"
 const Contacts = () => {
 
   const [formData, setFormData] = useState({
@@ -29,7 +29,11 @@ const Contacts = () => {
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
             {/* Left Content */}
             <div className="lg:w-1/2">
-              <h1 className="text-3xl text-[#03045e] font-playfairdisplay font-light mb-6 lg:text-5xl">Contact Us</h1>
+              <motion.h1
+               whileInView={{opacity:1, x: 0}}
+               initial={{ opacity: 0, x: -100 }}
+               transition={{ duration: 0.5}}
+              className="text-3xl text-[#03045e] font-playfairdisplay font-light mb-6 lg:text-5xl">Contact Us</motion.h1>
               </div>
 
                {/* Right Content - Grid of Images */}
@@ -76,7 +80,7 @@ const Contacts = () => {
           placeholder="Enter your phone number"
           value={formData.phone}
           onChange={handleChange}
-          className="bg-[#e2e3e2] bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
+          className="bg-[#e2e3e2] font-playfairdisplay text-2xl text-black border-2 border-black rounded-md px-4 py-3 w-full"
         />
         <input
           type="email"

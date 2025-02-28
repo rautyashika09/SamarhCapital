@@ -1,5 +1,5 @@
 import { ArrowDown, Linkedin } from 'lucide-react';
-
+import { motion } from "framer-motion"
 const Media = () => {
   const articles = [
     {
@@ -17,13 +17,21 @@ const Media = () => {
    <section className="relative bg-[#00dbba] min-h-screen">
       <div className="container px-20 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Content */}
-        <div className="lg:w-1/2 mb-10 lg:pl-10 lg:mb-0">
+        <motion.div
+        whileInView={{opacity:1, x: 0}}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.7}}
+        className="lg:w-1/2 pt:10 mb-10 lg:pl-10 lg:mb-0">
           <h1 className="text-6xl lg:text-7xl font-playfairdisplay text-[black] mb-6">Media and <span />
           Press releases</h1>
-        </div>
+        </motion.div>
 
         {/* Right Content - Grid of Images */}
-        <div className="py-20 lg:w-1/3 grid grid-cols-2">
+        <motion.div
+        whileInView={{opacity:1, x: 0}}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.7}}
+        className="py-20 lg:w-1/3 grid grid-cols-2">
         <div className="aspect-square flex items-center justify-center rounded-full">
                 <div className="text-[#03045e] transform ">
                   <img src="../src/assets/InImage/bplus.png" alt="arrow" />
@@ -46,11 +54,11 @@ const Media = () => {
                   className="w-full h-full object-cover rounded-t-full"
                 />
               </div>
-        </div>
+        </motion.div>
 
         {/* Scroll Down Indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <ArrowDown className="w-12 h-12 text-white animate-bounce" />
+          <ArrowDown className="w-12 h-12 text-[#03045e] animate-bounce" />
         </div>
       </div>
     </section>

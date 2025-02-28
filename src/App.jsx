@@ -11,7 +11,7 @@ import Media from "./components/Media"
 export default function App() {
   return (
     <div>
-      <div className="bg-[#ebe6e0]">
+      <div className="bg-[#ebe6e0] overflow-x-hidden">
       <Header/>
       <HomePage />
       < Thesis />

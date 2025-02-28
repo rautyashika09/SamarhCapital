@@ -1,20 +1,28 @@
 import React from 'react'
-
+import { motion } from "framer-motion"
 const Portfolio = () => {
   return (
     <div id='porfolia' className='px-20 bg-[#ebe6e0]'>
     <h1 className="text-[#f5700d] font-gothamb text-2xl my-8">PORTFOLIO</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-      <div className="relative">
+      <motion.div
+      whileInView={{opacity:1, x: 0}}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.7}}
+      className="relative">
         <img 
           src="../src/assets/images/image2.jpg" 
           alt="Investment Growth" 
           className="w-full h-auto rounded-lg shadow-lg"
         />
-      </div>
+      </motion.div>
       {/* <div className="flex items-center justify-center"> */}
-      <div className="grid grid-cols-2 lg:px-20 lg:pb-20">
+      <motion.div
+      whileInView={{opacity:1, x: 0}}
+      initial={{ opacity: 0, x: 100 }}
+      transition={{ duration: 0.5}}
+      className="grid grid-cols-2 lg:px-20 lg:pb-20">
       <div className="aspect-square bg-[#03045e] flex items-center justify-center">
                 <div className="text-white p-4 transform ">
                   <img src="../src/assets/InImage/Errow.png" alt="arrow" />
@@ -32,7 +40,7 @@ const Portfolio = () => {
                   <img src="../src/assets/InImage/arrow.png" alt="arrow" />
                 </div>
               </div>
-        </div>
+        </motion.div>
       </div>
     {/* </div> */}
 
@@ -43,7 +51,7 @@ const Portfolio = () => {
       <input
         type="search"
         placeholder="Search"
-        className="w-64 bg-gray-100 rounded-full px-4 py-2 focus:outline-none"
+        className="w-32 lg:w64 bg-gray-100 rounded-full px-4 py-2 focus:outline-none"
       />
       <svg className="w-5 h-5 absolute right-3 top-2.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -53,9 +61,9 @@ const Portfolio = () => {
         <img 
           src="../src/assets/InImage/Agrilife.png" 
           alt="Agrileaf" 
-          className="w-28 h-28 p-1 text-start rounded-full border-2 self-start "
+          className="w-14 h-14 lg:w-28 lg:h-28 p-1 text-start rounded-full border-2 self-start "
         />
-        <h3 className="text-3xl font-playfairdisplay text-end">Agrileaf</h3>
+        <h3 className="text:lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
       </div>
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       </div>

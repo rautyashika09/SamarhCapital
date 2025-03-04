@@ -57,55 +57,83 @@ function HomePage() {
             className="lg:w-1/2 grid grid-cols-3">
               <div className="aspect-square">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+                  src="../src/assets/images/img1.jpg"
                   alt="Business analysis"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
-                <div className="text-white w-full h-full p-4 transform ">
+                <motion.div
+                whileHover={{
+                  x: 60,         // Moves the arrow to the right
+                  opacity: 0,    // Makes the arrow invisible
+                }}
+                transition={{
+                  duration: 0.5,  // Duration of the transition (how long it takes)
+                }}
+                className="text-white w-full h-full p-4 transform ">
                   <img src="../src/assets/InImage/Arrow.png" alt="arrow" />
-                </div>
+                </motion.div>
               </div>
-              <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
+              <motion.div
+              whileHover={{
+                rotateY: 180, // Flip the element on the X-axis by 180 degrees
+              }}
+              transition={{
+                duration: 0.5, // Duration of the flip transition
+              }}
+              className="aspect-square bg-[#00dbba] flex items-center justify-center">
               <div className="text-white w-full h-full p-4 transform ">
                   <img src="../src/assets/InImage/Errow.png" alt="Errow" />
                 </div>
-              </div>
+              </motion.div>
               <div className="aspect-square">
                 <img 
-                  src="../src/assets/images/image2.jpg"
+                  src="../src/assets/images/img2.jpg"
                   alt="Business growth"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-square bg-white flex items-center justify-center">
               <div className="text-white w-full h-full p-4 transform ">
-                  <img src="../src/assets/InImage/bplus.png" alt="Errow" />
+                  <motion.img
+                   whileHover={{ rotate: 360 }}
+                   transition={{ duration: 1 }}
+                  src="../src/assets/InImage/bplus.png" alt="Errow" />
                 </div>
                 </div>
               <div className="aspect-square">
                 <img 
-                  src="../src/assets/images/image3.jpg"
+                  src="../src/assets/images/img3.jpg"
                   alt="Business growth"
                   className="w-full h-full object-cover rounded-br-[75px]"
                 />
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-bl-[75px]">
                 <div className="text-white w-full h-full p-4 transform ">
-                  <img src="../src/assets/InImage/cross.png" alt="cross" />
+                <motion.img
+                   whileHover={{ rotate: 360 }}
+                   transition={{ duration: 1 }}
+                  src="../src/assets/InImage/cross.png" alt="cross" />
                 </div>
               </div>
               <div className="aspect-square">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+                  src="../src/assets/images/img4.jpg"
                   alt="Business analysis"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
               <div className="text-white w-full h-full transform ">
-                  <img src="../src/assets/InImage/infinity.png" alt="infinity" />
+                  <motion.img
+                   whileHover={{
+                    rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                   src="../src/assets/InImage/infinity.png" alt="infinity" />
                 </div>
                  </div>
             </motion.div>
@@ -122,10 +150,10 @@ function HomePage() {
 
       {/* Key Pointers Section */}
 
-      <div className="min-h-screen bg-[#e6e6e6] flex flex-col  items-center justify-center p-6 mx-20 my-10">
+      <div className="bg-[#e6e6e6] bg-[url('../src/assets/images/bgInfinity.png')] bg-cover bg-center h-full w-full  flex flex-col  items-center justify-center p-6 lg:mx-20 my-10">
       <h1 className="text-2xl lg:text-3xl text-black font-playfairdisplay self-start mb-8">Key Pointers/Messages</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:pl-36">
         {/* Row 1 */}
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
@@ -146,7 +174,7 @@ function HomePage() {
           <img className='text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start ' 
           src="../src/assets/InImage/impliment.png" alt="Implementing industry-leading practices" />
         </motion.div>
-        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        <div className="p-4 rounded shadow-md flex flex-col items-center">
         </div>
  <motion.div
             animate={{
@@ -186,7 +214,7 @@ function HomePage() {
 
         </motion.div>
 
-        <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
+        <div className="text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
  <motion.div
             animate={{

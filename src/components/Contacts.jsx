@@ -40,18 +40,40 @@ const Contacts = () => {
                <div className="lg:w-1/2 grid grid-cols-3">
           <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/infinity.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/infinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-tl-[75px]">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
+                  <motion.img 
+                  whileHover={{
+                    rotateY: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
-                <div className="text-white p-4 transform ">
+                <motion.div
+                whileHover={{
+                  x: 60,         // Moves the arrow to the right
+                  opacity: 0,    // Makes the arrow invisible
+                }}
+                transition={{
+                  duration: 0.5,  // Duration of the transition (how long it takes)
+                }} 
+                className="text-white p-4 transform ">
                   <img src="../src/assets/InImage/arrow.png" alt="arrow" />
-                </div>
+                </motion.div>
               </div>
               </div>
               </div>

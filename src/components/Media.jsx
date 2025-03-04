@@ -21,7 +21,7 @@ const Media = () => {
         whileInView={{opacity:1, x: 0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.7}}
-        className="lg:w-1/2 pt:10 mb-10 lg:pl-10 lg:mb-0">
+        className="lg:w-1/2 pt:10 mt-4 lg:pt-0 lg:pl-10 lg:mb-0">
           <h1 className="text-6xl lg:text-7xl font-playfairdisplay text-[black] mb-6">Media and <span />
           Press releases</h1>
         </motion.div>
@@ -38,18 +38,33 @@ const Media = () => {
                 </div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-b-full">
-                <div className="text-white p-4 transform ">
+                <motion.div
+                 whileHover={{
+                  x: 60,         // Moves the arrow to the right
+                  opacity: 0,    // Makes the arrow invisible
+                }}
+                transition={{
+                  duration: 0.5,  // Duration of the transition (how long it takes)
+                }}
+                className="text-white p-4 transform ">
                   <img src="../src/assets/InImage/arrow.png" alt="arrow" />
-                </div>
+                </motion.div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/tInfinity.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/tInfinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+                  src="../src/assets/images/img5.jpg"
                   alt="Business analysis"
                   className="w-full h-full object-cover rounded-t-full"
                 />

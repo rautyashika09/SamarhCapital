@@ -62,13 +62,13 @@ import { motion } from "framer-motion";
           </div>
         ))}
       </div>
-      <p className="mt-8 text-3xl lg:text-4xl font-playfairdisplay text-gray-800">
+      <p className="mt-8 text-3xl lg:text-4xl lg:pb-10 font-playfairdisplay text-gray-800">
         Investing in the future: Backing companies poised to redefine their industries.
       </p>
     </div>
 
     {/* investment criteria */}
-    <div className="min-h-screen bg-[#ebe6e0] flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen bg-[#ebe6e0] bg-[url('../src/assets/images/bgErrow.png')] bg-cover bg-center h-full w-full flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-playfairdisplay text-black mb-8 self-start">Investment criteria</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto lg:min-h-[500px]">
@@ -95,7 +95,7 @@ import { motion } from "framer-motion";
           approaches to age-old challenges</p>
           </motion.div>        
 
-        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        <div className="p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
         <motion.div
@@ -117,7 +117,7 @@ import { motion } from "framer-motion";
           sustainable growth.</p>
           </motion.div>  
 
-          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+          <div className=" p-4 rounded shadow-md flex flex-col items-center">
         </div>  
 
         <motion.div 
@@ -163,7 +163,7 @@ import { motion } from "framer-motion";
           growth potential.</p>
           </motion.div>   
 
-          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+          <div className="p-4 rounded shadow-md flex flex-col items-center">
           </div> 
 
           <motion.div
@@ -186,11 +186,11 @@ import { motion } from "framer-motion";
           approaches to ageold challenges</p>
           </motion.div>   
 
-          <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+          <div className="p-4 rounded shadow-md flex flex-col items-center">
           </div> 
       </div>
 
-      <h2 className="text-3xl lg:text-4xl lg:px-40 font-gotham font-thin text-black mt-12 text-center lg:pb-20">
+      <h2 className="text-2xl lg:text-4xl lg:px-40 font-gotham font-thin text-black mt-12 text-center lg:pb-20">
         “EMPOWERING AMBITIOUS ENTREPRENEURS TO UNLOCK THEIR DREAMS AND DRIVE TRANSFORMATIVE CHANGE.”
       </h2>
     </div>

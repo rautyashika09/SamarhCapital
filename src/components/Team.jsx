@@ -31,25 +31,42 @@ const Team = () => {
         whileInView={{opacity:1, x: 0}}
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.7}}
-        className="lg:w-1/3 grid grid-cols-2 pr-10">
+        className="lg:w-1/3 grid grid-cols-2 p-10 lg:p-2 pr-10">
         <div className="aspect-square flex items-center justify-center rounded-full">
                 <div className="text-[#03045e] transform ">
-                  <img src="../src/assets/InImage/wPlus.png" alt="arrow" />
+                  <motion.img
+                   whileHover={{ rotate: 360 }}
+                   transition={{ duration: 1 }}
+                  src="../src/assets/InImage/wPlus.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-b-full">
                 <div className="text-white transform p-4">
-                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateY: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/tInfinity.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/tInfinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+                  src="../src/assets/images/img4.jpg"
                   alt="Business analysis"
                   className="w-full h-full object-cover rounded-t-full"
                 />
@@ -57,7 +74,7 @@ const Team = () => {
         </motion.div>
 
         {/* Scroll Down Indicator */}
-        <div className="absolute bottom-4 lg:bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="absolute mt-4 bottom-2 lg:bottom-10 left-1/2 transform -translate-x-1/2">
 <div className="border border-[#03045e] rounded-full p-4">
               <ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" />
             </div>

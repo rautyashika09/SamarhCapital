@@ -12,7 +12,7 @@ const Portfolio = () => {
       transition={{ duration: 0.7}}
       className="relative">
         <img 
-          src="../src/assets/images/image2.jpg" 
+          src="../src/assets/images/img3.jpg" 
           alt="Investment Growth" 
           className="w-full h-auto rounded-lg shadow-lg"
         />
@@ -25,20 +25,42 @@ const Portfolio = () => {
       className="grid grid-cols-2 lg:px-20 lg:pb-20">
       <div className="aspect-square bg-[#03045e] flex items-center justify-center">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/Errow.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateY: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/Errow.png" alt="arrow" />
                 </div>
               </div>
               <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
         <div className="aspect-square bg-[#00dbba] flex items-center justify-center rounded-full">
                 <div className="text-white p-4 transform ">
-                  <img src="../src/assets/InImage/infinity.png" alt="arrow" />
+                  <motion.img
+                  whileHover={{
+                    rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                  }}
+                  transition={{
+                    duration: 0.5, // Duration of the flip transition
+                  }}
+                  src="../src/assets/InImage/infinity.png" alt="arrow" />
                 </div>
               </div>
               <div className="aspect-square bg-[#00dbba] flex items-center justify-center">
-                <div className="text-white p-4 transform ">
+                <motion.div
+                 whileHover={{
+                  x: 60,         // Moves the arrow to the right
+                  opacity: 0,    // Makes the arrow invisible
+                }}
+                transition={{
+                  duration: 0.5,  // Duration of the transition (how long it takes)
+                }}
+                className="text-white p-4 transform ">
                   <img src="../src/assets/InImage/arrow.png" alt="arrow" />
-                </div>
+                </motion.div>
               </div>
         </motion.div>
       </div>
@@ -71,8 +93,8 @@ const Portfolio = () => {
       </div>
     </div>
 
-    <div className="text-center mt-32 mb-16">
-      <h2 className="text-4xl font-gotham font-light mb-4">
+    <div className="text-center mt-16 lg:mt-32 mb-16">
+      <h2 className="text-2xl lg:text-4xl font-gotham font-light mb-4">
         "EMPOWERING AMBITIOUS ENTREPRENEURS TO UNLOCK<br />
         THEIR DREAMS AND DRIVE TRANSFORMATIVE CHANGE."
       </h2>

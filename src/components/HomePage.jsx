@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ArrowDown, Users, Settings, LineChart, Cog } from 'lucide-react';
 import { motion } from "framer-motion";
 
@@ -12,6 +12,7 @@ const container = (delay) => ({
 });
 
 function HomePage() {
+
   return (
     <div className="min-h-screen bg-[#e6e6e6]">
       {/* Hero Section */}
@@ -65,14 +66,14 @@ function HomePage() {
               <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
                 <motion.div
                 whileHover={{
-                  x: 60,         // Moves the arrow to the right
-                  opacity: 0,    // Makes the arrow invisible
+                  x: 60,         
+                  opacity: 0,    
                 }}
                 transition={{
-                  duration: 0.5,  // Duration of the transition (how long it takes)
+                  duration: 0.5,  
                 }}
                 className="text-white w-full h-full p-4 transform ">
-                  <img src="../src/assets/InImage/Arrow.png" alt="arrow" />
+                <img src="../src/assets/InImage/Arrow.png" alt="arrow" />
                 </motion.div>
               </div>
               <motion.div
@@ -142,7 +143,7 @@ function HomePage() {
           {/* Scroll Down Indicator */}
           <div className="absolute mb-4 pt-11 left-52 transform -translate-x-1/2 lg:bottom-16 lg:left-56">
             <div className="border border-[#03045e] rounded-full p-4">
-              <ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" />
+              <a href="#thesis"><ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" /></a>
             </div>
           </div>
         </div>
@@ -157,83 +158,201 @@ function HomePage() {
         {/* Row 1 */}
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
-         <motion.div
-                    animate={{
-                      rotateY: 180, 
-                    }}
-                    transition={{
-                      duration: 2, 
-                      repeat: 1, 
-                      repeatType: "reverse", 
-                      ease: "easeInOut", 
-                    }}
-        className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center">
-          <p className="text-center pb-10">
-            Implementing industry-leading practices.
-          </p>
-          <img className='text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start ' 
-          src="../src/assets/InImage/impliment.png" alt="Implementing industry-leading practices" />
-        </motion.div>
+          <motion.div
+      whileHover={{
+        rotateY: 180, 
+      }}
+      transition={{
+        duration: 0.6, 
+        ease: "easeInOut", 
+      }}
+      className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center relative cursor-pointer"
+      style={{
+        perspective: '1000px', 
+        transformStyle: 'preserve-3d', 
+      }}
+    >
+      {/* Front Side */}
+      <motion.div
+        className="flex flex-col items-center"
+        style={{
+          backfaceVisibility: 'hidden', // Hide the back side during rotation
+        }}
+      >
+        <p className="text-center pb-10">
+          Implementing industry-leading practices.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/impliment.png"
+          alt="Implementing industry-leading practices"
+        />
+      </motion.div>
+
+      {/* Back Side */}
+      <motion.div
+        className="absolute top-0 flex flex-col items-center p-2"
+        style={{
+          backfaceVisibility: 'hidden', 
+          transform: 'rotateY(180deg)', 
+        }}
+      >
+        <p className="text-center pb-10">
+          Revolutionizing the industry with innovation.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/impliment.png"
+          alt="Revolutionizing the industry with innovation"
+        />
+      </motion.div>
+    </motion.div>
         <div className="p-4 rounded shadow-md flex flex-col items-center">
         </div>
- <motion.div
-            animate={{
-              rotateY: 180, 
-            }}
-            transition={{
-              duration: 2, 
-              repeat: 1, 
-              repeatType: "reverse", 
-              ease: "easeInOut", 
-            }}
-        className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
-          <p className="text-center pb-10">
-            Tailored growth strategies.
-          </p>
-          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
-           src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
 
-        </motion.div>
-        {/* Row 2 (Additional boxes for 4+4 layout) */}
         <motion.div
-                   animate={{
-                     rotateY: 180, 
-                   }}
-                   transition={{
-                     duration: 2, 
-                     repeat: 1, 
-                     repeatType: "reverse", 
-                     ease: "easeInOut", 
-                   }}
-        className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center pb-10">
-            Expanding Professional Networks.
-          </p>
-          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
+      whileHover={{
+        rotateY: 180, 
+      }}
+      transition={{
+        duration: 0.6, 
+        ease: "easeInOut", 
+      }}
+      className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center relative cursor-pointer"
+      style={{
+        perspective: '1000px', 
+        transformStyle: 'preserve-3d', 
+      }}
+    >
+      {/* Front Side */}
+      <motion.div
+        className="flex flex-col items-center"
+        style={{
+          backfaceVisibility: 'hidden', 
+        }}
+      >
+        <p className="text-center pb-10 ">
+        Tailored growth strategies.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
+      </motion.div>
+
+      {/* Back Side */}
+      <motion.div
+        className="absolute top-0 flex flex-col items-center p-2"
+        style={{
+          backfaceVisibility: 'hidden', 
+          transform: 'rotateY(180deg)', 
+        }}
+      >
+        <p className="text-center pb-10">
+        Tailored growth strategies innovation.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
+
+      </motion.div>
+    </motion.div>
+        {/* Row 2 (Additional boxes for 4+4 layout) */}
+       
+        <motion.div
+      whileHover={{
+        rotateY: 180, 
+      }}
+      transition={{
+        duration: 0.6, 
+        ease: "easeInOut", 
+      }}
+      className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
+      style={{
+        perspective: '1000px', 
+        transformStyle: 'preserve-3d', 
+      }}
+    >
+      {/* Front Side */}
+      <motion.div
+        className="flex flex-col items-center"
+        style={{
+          backfaceVisibility: 'hidden', 
+        }}
+      >
+        <p className="text-center pb-10 ">
+        Expanding Professional Networks.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/expanding.png" alt="Building collaborative teams" />
+      </motion.div>
+
+      {/* Back Side */}
+      <motion.div
+        className="absolute top-0 flex flex-col items-center p-2"
+        style={{
+          backfaceVisibility: 'hidden', 
+          transform: 'rotateY(180deg)', 
+        }}
+      >
+        <p className="text-center pb-10">
+        Expanding Professional Networks.
+                </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
           src="../src/assets/InImage/expanding.png" alt="Building collaborative teams" />
 
-        </motion.div>
-
+      </motion.div>
+    </motion.div>
         <div className="text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
- <motion.div
-            animate={{
-              rotateY: 180, 
-            }}
-            transition={{
-              duration: 2, 
-              repeat: 1, 
-              repeatType: "reverse", 
-              ease: "easeInOut", 
-            }}
-        className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center pb-10">
-            Offering Specialized Industry Knowledge.
-          </p>
-          <img className='h-16 w-16 lg:h-24 lg:w-24 self-start'
+
+        <motion.div
+      whileHover={{
+        rotateY: 180, 
+      }}
+      transition={{
+        duration: 0.6, 
+        ease: "easeInOut", 
+      }}
+      className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
+      style={{
+        perspective: '1000px', 
+        transformStyle: 'preserve-3d', 
+      }}
+    >
+      {/* Front Side */}
+      <motion.div
+        className="flex flex-col items-center"
+        style={{
+          backfaceVisibility: 'hidden', 
+        }}
+      >
+        <p className="text-center pb-10 ">
+        Offering Specialized Industry Knowledge.
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/offering.png" alt="Strategic partnerships" />
+      </motion.div>
+
+      {/* Back Side */}
+      <motion.div
+        className="absolute top-0 flex flex-col items-center p-2"
+        style={{
+          backfaceVisibility: 'hidden', 
+          transform: 'rotateY(180deg)', 
+        }}
+      >
+        <p className="text-center pb-10">
+        Offering Specialized Industry Knowledge.
+                </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
           src="../src/assets/InImage/offering.png" alt="Strategic partnerships" />
 
-        </motion.div>
+      </motion.div>
+    </motion.div>
         <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
         </div>
       </div>

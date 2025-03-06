@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Thesis = () => {
   return (
-    <div>
+    <div id='thesis'>
          <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left Side - Text Content */}
@@ -114,7 +114,7 @@ const Thesis = () => {
           Buoyant domestic 
           demand.
           </p>
-          <img src="../src/assets/InImage/basket.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 lg:self-start '/>
+          <img src="../src/assets/InImage/basket.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end '/>
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 
@@ -129,7 +129,7 @@ const Thesis = () => {
           Benign fiscal 
           incentives
           </p>
-          <img src="../src/assets/InImage/home.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 lg:self-start ' />
+          <img src="../src/assets/InImage/home.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end' />
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 
@@ -145,7 +145,7 @@ const Thesis = () => {
           technology and skilled 
           labour
           </p>
-          <img src="../src/assets/InImage/screw.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 lg:self-start pl-2 pb-2' />
+          <img src="../src/assets/InImage/screw.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end' />
         </motion.div>
         <motion.div
        initial={{ scale: 0.5 }} 
@@ -160,7 +160,7 @@ const Thesis = () => {
           Evolving business 
           ecosystem
           </p>
-          <img src="../src/assets/InImage/circle.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 lg:self-start pl-3 pb-3'/>
+          <img src="../src/assets/InImage/circle.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end'/>
         </motion.div>
       </div>
 
@@ -186,7 +186,7 @@ const Thesis = () => {
           <p className="text-center pb-16">
           Engineering
           </p>
-          <img src="../src/assets/InImage/setting.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 self-start' />
+          <img src="../src/assets/InImage/setting.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end' />
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 
@@ -200,7 +200,7 @@ const Thesis = () => {
           <p className="text-center pb-16">
          Chemicals
           </p>
-          <img src="../src/assets/InImage/beaker.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 self-end'/>
+          <img src="../src/assets/InImage/beaker.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 self-end'/>
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 
@@ -214,7 +214,7 @@ const Thesis = () => {
           <p className="text-center pb-16">
           Business services
           </p>
-          <img src="../src/assets/InImage/tool.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 self-start'/>
+          <img src="../src/assets/InImage/tool.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 self-start'/>
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 

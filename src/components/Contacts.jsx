@@ -165,7 +165,7 @@ const Contacts = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         </div>
-        <div className='flex justify-between gap-8 '>
+        <div className='flex justify-between gap-2 '>
         <div>
           <p className="font-medium mb-2">Corporate Office</p>
           <p className="text-gray-600">

@@ -1,6 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { motion } from "framer-motion"
 const Portfolio = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = () => {
+    window.location.href = 'https://www.thehindu.com/news/cities/Mangalore/agrileaf-secures-16-crore-in-growth-funding/article68955507.ece'; // Replace with your desired URL
+  };
+
   return (
     <div id='porfolia' className='px-20 bg-[#ebe6e0]'>
     <h1 className="text-[#f5700d] font-gothamb text-2xl my-8">PORTFOLIO</h1>
@@ -56,7 +63,7 @@ const Portfolio = () => {
                   opacity: 0,    // Makes the arrow invisible
                 }}
                 transition={{
-                  duration: 0.5,  // Duration of the transition (how long it takes)
+                  duration: 0.5,  
                 }}
                 className="text-white p-4 transform ">
                   <img src="../src/assets/InImage/arrow.png" alt="arrow" />
@@ -79,14 +86,36 @@ const Portfolio = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
-      <div className="rounded-lg flex justify-between shadow-md px-2 pt-6 pb-20 hover:shadow-lg transition-shadow">
+      {/* <div className="rounded-lg flex justify-between shadow-md px-2 pt-6 pb-20 hover:shadow-lg transition-shadow">
         <img 
           src="../src/assets/InImage/Agrilife.png" 
           alt="Agrileaf" 
           className="w-14 h-14 lg:w-28 lg:h-28 p-1 text-start rounded-full border-2 self-start "
         />
         <h3 className="text:lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
+      </div> */}
+      <div
+      className={`rounded-lg flex flex-col justify-between shadow-md px-2 pt-6 pb-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${
+       isHovered ? 'min-h-48 max-h-64' : 'min-h-48'
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={handleClick}
+    >
+      <div className="flex justify-between">
+        <img
+          src="../src/assets/InImage/Agrilife.png"
+          alt="Agrileaf"
+          className="w-14 h-14 lg:w-24 lg:h-24 p-1 text-start rounded-full border-2 self-start"
+        />
+        <h3 className="text-lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
       </div>
+      {isHovered && (
+        <p className="text-sm lg:text-base mt-2">
+          Agrileaf, manufacturer and exporter of biodegradable dinnerware made from areca leaf and based near Dharmasthala, has secured ₹16 crore in growth funding .....
+        </p>
+      )}
+    </div>
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       </div>
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

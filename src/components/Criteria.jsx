@@ -74,18 +74,28 @@ import { motion } from "framer-motion";
       <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto lg:min-h-[500px]">
         {/* Row 1 */}
 
-        <motion.div
-          animate={{
-            rotateY: 180, 
-          }}
-          transition={{
-            duration: 1, 
-            repeat: 1, 
-            repeatType: "reverse", 
-            ease: "easeInOut", 
-          }}
-        className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
-          <p 
+           <motion.div
+                whileHover={{
+                  rotateY: 180, 
+                }}
+                transition={{
+                  duration: 0.6, 
+                  ease: "easeInOut", 
+                }}
+                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
+                style={{
+                  perspective: '1000px', 
+                  transformStyle: 'preserve-3d', 
+                }}
+              >
+                {/* Front Side */}
+                <motion.div
+                  className="flex flex-col items-center"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                  }}
+                >
+                  <p 
           className="text-center">
           Disrupting the status 
           quo: Supporting 
@@ -93,98 +103,246 @@ import { motion } from "framer-motion";
           fresh perspectives 
           and unorthodox 
           approaches to age-old challenges</p>
-          </motion.div>        
-
-        <div className="p-4 rounded shadow-md flex flex-col items-center">
-        </div>
-
-        <motion.div
-          animate={{
-            rotateY: 180, 
-          }}
-          transition={{
-            duration: 2, 
-            repeat: 1, 
-            repeatType: "reverse", 
-            ease: "easeInOut", 
-          }}
-        className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
-          <p className="text-center">
-          Growth-oriented 
-          entrepreneurs: 
-          Partnering with 
-          founders focused on 
-          sustainable growth.</p>
-          </motion.div>  
-
-          <div className=" p-4 rounded shadow-md flex flex-col items-center">
-        </div>  
-
-        <motion.div 
-          animate={{
-            rotateY: 180, 
-          }}
-          transition={{
-            duration: 1, 
-            repeat: 1, 
-            repeatType: "reverse", 
-            ease: "easeInOut", 
-          }}
-        className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center">
-          <p className="text-center">
-          Proven track records: 
-          Engaging with 
-          businesses that have 
-          validated concepts 
-          and demonstrated 
-          market appeal.</p>
-          </motion.div> 
-        {/* Row 2 (Additional boxes for 4+4 layout) */}
-        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
-        </div> 
-
-        <motion.div 
-          animate={{
-            rotateY: 180, 
-          }}
-          transition={{
-            duration: 1, 
-            repeat: 1, 
-            repeatType: "reverse", 
-            ease: "easeInOut", 
-          }}
-        className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center">
-          Scalability potential: 
-          Supporting teams 
-          with strong 
-          implementation 
-          skills and significant 
-          growth potential.</p>
-          </motion.div>   
-
-          <div className="p-4 rounded shadow-md flex flex-col items-center">
-          </div> 
-
-          <motion.div
-            animate={{
-              rotateY: 180, 
-            }}
-            transition={{
-              duration: 2, 
-              repeat: 1, 
-              repeatType: "reverse", 
-              ease: "easeInOut", 
-            }}
-          className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center">
-          <p className="text-center">
+                  
+                </motion.div>
+          
+                {/* Back Side */}
+                <motion.div
+                  className="absolute top-0 flex flex-col items-center p-2"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                    transform: 'rotateY(180deg)', 
+                  }}
+                >
+                  <p 
+          className="text-center">
           Disrupting the status 
           quo: Supporting 
           businesses with 
           fresh perspectives 
           and unorthodox 
+          approaches to age-old challenges</p>
+                
+          
+                </motion.div>
+              </motion.div>
+
+        <div className="p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+
+          <motion.div
+                whileHover={{
+                  rotateY: 180, 
+                }}
+                transition={{
+                  duration: 0.6, 
+                  ease: "easeInOut", 
+                }}
+                className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
+                style={{
+                  perspective: '1000px', 
+                  transformStyle: 'preserve-3d', 
+                }}
+              >
+                {/* Front Side */}
+                <motion.div
+                  className="flex flex-col items-center"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                  }}
+                >
+                 <p className="text-center">
+          Growth-oriented 
+          entrepreneurs: 
+          Partnering with 
+          founders focused on 
+          sustainable growth.</p>
+                  
+                </motion.div>
+          
+                {/* Back Side */}
+                <motion.div
+                  className="absolute top-0 flex flex-col items-center p-2"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                    transform: 'rotateY(180deg)', 
+                  }}
+                >
+                 <p className="text-center">
+          Growth-oriented 
+          entrepreneurs: 
+          Partnering with 
+          founders focused on 
+          sustainable growth.</p>
+                
+          
+                </motion.div>
+              </motion.div>
+
+          <div className=" p-4 rounded shadow-md flex flex-col items-center">
+        </div>  
+
+          <motion.div
+                whileHover={{
+                  rotateY: 180, 
+                }}
+                transition={{
+                  duration: 0.6, 
+                  ease: "easeInOut", 
+                }}
+                className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
+                style={{
+                  perspective: '1000px', 
+                  transformStyle: 'preserve-3d', 
+                }}
+              >
+                {/* Front Side */}
+                <motion.div
+                  className="flex flex-col items-center"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                  }}
+                >
+                 <p className="text-center">
+                 Proven track records: 
+          Engaging with 
+          businesses that have 
+          validated concepts 
+          and demonstrated 
+          market appeal.</p>
+                  
+                </motion.div>
+          
+                {/* Back Side */}
+                <motion.div
+                  className="absolute top-0 flex flex-col items-center p-2"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                    transform: 'rotateY(180deg)', 
+                  }}
+                >
+                 <p className="text-center">
+                 Proven track records: 
+          Engaging with 
+          businesses that have 
+          validated concepts 
+          and demonstrated 
+          market appeal.</p>
+                
+          
+                </motion.div>
+              </motion.div>
+
+          
+        {/* Row 2 (Additional boxes for 4+4 layout) */}
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div> 
+
+
+          <motion.div
+                whileHover={{
+                  rotateY: 180, 
+                }}
+                transition={{
+                  duration: 0.6, 
+                  ease: "easeInOut", 
+                }}
+                className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
+                style={{
+                  perspective: '1000px', 
+                  transformStyle: 'preserve-3d', 
+                }}
+              >
+                {/* Front Side */}
+                <motion.div
+                  className="flex flex-col items-center"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                  }}
+                >
+                 <p className="text-center">
+                 Scalability potential: 
+          Supporting teams 
+          with strong 
+          implementation 
+          skills and significant 
+          growth potential.</p>
+                  
+                </motion.div>
+          
+                {/* Back Side */}
+                <motion.div
+                  className="absolute top-0 flex flex-col items-center p-2"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                    transform: 'rotateY(180deg)', 
+                  }}
+                >
+                 <p className="text-center">
+                 Scalability potential: 
+          Supporting teams 
+          with strong 
+          implementation 
+          skills and significant 
+          growth potential.</p>
+                
+          
+                </motion.div>
+              </motion.div>
+
+          <div className="p-4 rounded shadow-md flex flex-col items-center">
+          </div> 
+          <motion.div
+                whileHover={{
+                  rotateY: 180, 
+                }}
+                transition={{
+                  duration: 0.6, 
+                  ease: "easeInOut", 
+                }}
+                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
+                style={{
+                  perspective: '1000px', 
+                  transformStyle: 'preserve-3d', 
+                }}
+              >
+                {/* Front Side */}
+                <motion.div
+                  className="flex flex-col items-center"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                  }}
+                >
+                 <p className="text-center">
+                 Disrupting the status 
+          quo: Supporting 
+          businesses with 
+          fresh perspectives 
+          and unorthodox 
           approaches to ageold challenges</p>
-          </motion.div>   
+                  
+                </motion.div>
+          
+                {/* Back Side */}
+                <motion.div
+                  className="absolute top-0 flex flex-col items-center p-2"
+                  style={{
+                    backfaceVisibility: 'hidden', 
+                    transform: 'rotateY(180deg)', 
+                  }}
+                >
+                 <p className="text-center">
+                 Disrupting the status 
+          quo: Supporting 
+          businesses with 
+          fresh perspectives 
+          and unorthodox 
+          approaches to ageold challenges</p>
+                
+          
+                </motion.div>
+              </motion.div>
 
           <div className="p-4 rounded shadow-md flex flex-col items-center">
           </div> 

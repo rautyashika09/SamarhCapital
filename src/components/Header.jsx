@@ -40,8 +40,8 @@ function Header() {
             {/* <a href="../src/assets/logo.png" className="text-2xl font-bold">
             </a> */}
             <div className="flex flex-col">
-              <span className="font-serif text-lg">आत्मदीपः भव</span>
-              <span className="text-xs uppercase tracking-wider">BE YOUR OWN LIGHT</span>
+              <span className="font-serif text-xl">आत्मदीपः भव</span>
+              <span className="text-lg uppercase tracking-wider">BE YOUR OWN LIGHT</span>
             </div>
           </div>
 

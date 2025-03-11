@@ -88,7 +88,7 @@ const Contacts = () => {
 
         <form onSubmit={handleSubmit} className="max-w-6xl mx-auto mb-16">
       <div
-      className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
         <input
           type="text"
           name="name"
@@ -139,12 +139,28 @@ const Contacts = () => {
 
   {/* contact info */}
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-2 max-w-7xl mx-auto mb-16">
+
+                <div className='my-2'>
+                 <p className='text-center font-bold text-2xl mb-4'>Regulatory</p>
+                 <p className='text-md font-gothamb pb-2'>Fund Name: Samarsh Capital - Fund I
+                 </p>
+                 <p className='font-gotham pb-2'>Category of Fund : <span className='font-playfairdisplayi italic text-md'>Category II Alternative Investment Fund</span>  
+                 </p>
+                 <p className='font-gotham pb-2'>Registration No :  <span className='font-playfairdisplayi italic text-md'>IN/AIF2/24-25/1620
+                 </span>  
+                 </p>
+                 <p className='font-gotham pb-2'>Manager :   <span className='font-playfairdisplayi italic text-md'>Samarsh Capital Management LLP
+                 </span>  
+                 </p>
+                </div>
+
       <div className="text-center">
-        <div className="w-12 h-12 mx-auto mb-4">
+        <div className="w-12 h-12 mx-auto mb-4 bord border-black">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
+        
         </div>
         <p className="text-gray-800">+91 80 68474100</p>
       </div>
@@ -154,7 +170,9 @@ const Contacts = () => {
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
+          {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-black"></div> */}
         </div>
+        
         <p className="text-gray-800">contact@samarshcapital.com</p>
       </div>
 

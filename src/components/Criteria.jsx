@@ -71,7 +71,7 @@ import { motion } from "framer-motion";
     <div className="min-h-screen bg-[#ebe6e0] bg-[url('../src/assets/images/bgErrow.png')] bg-cover bg-center h-full w-full flex flex-col items-center justify-center p-6">
       <h1 className="text-5xl font-playfairdisplay text-black mb-8 self-start">Investment criteria</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto lg:min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto ">
         {/* Row 1 */}
 
            <motion.div
@@ -96,13 +96,15 @@ import { motion } from "framer-motion";
                   }}
                 >
                   <p 
-          className="text-center">
+          className="text-center p-2 font-playfairdisplayb font-bold pb-10">
           Disrupting the status 
-          quo: Supporting 
-          businesses with 
-          fresh perspectives 
-          and unorthodox 
-          approaches to age-old challenges</p>
+          quo</p>
+
+          <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/beaker.png"
+          alt="Implementing industry-leading practices"
+        />
                   
                 </motion.div>
           
@@ -115,9 +117,8 @@ import { motion } from "framer-motion";
                   }}
                 >
                   <p 
-          className="text-center">
-          Disrupting the status 
-          quo: Supporting 
+          className="text-center font-playfairdisplayi italic  pt-4">
+          Supporting 
           businesses with 
           fresh perspectives 
           and unorthodox 
@@ -152,13 +153,15 @@ import { motion } from "framer-motion";
                     backfaceVisibility: 'hidden', 
                   }}
                 >
-                 <p className="text-center">
+                 <p className="text-center font-playfairdisplayb font-bold pb-10">
           Growth-oriented 
-          entrepreneurs: 
-          Partnering with 
-          founders focused on 
-          sustainable growth.</p>
-                  
+          entrepreneurs
+        </p>
+        <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/tailored.png"
+          alt="Implementing industry-leading practices"
+        />    
                 </motion.div>
           
                 {/* Back Side */}
@@ -169,9 +172,7 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center">
-          Growth-oriented 
-          entrepreneurs: 
+                 <p className="text-center font-playfairdisplay italic  pt-4"> 
           Partnering with 
           founders focused on 
           sustainable growth.</p>
@@ -191,7 +192,7 @@ import { motion } from "framer-motion";
                   duration: 0.6, 
                   ease: "easeInOut", 
                 }}
-                className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
+                className="text-gray-700 p-2 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
                 style={{
                   perspective: '1000px', 
                   transformStyle: 'preserve-3d', 
@@ -199,19 +200,19 @@ import { motion } from "framer-motion";
               >
                 {/* Front Side */}
                 <motion.div
-                  className="flex flex-col items-center"
+                  className= "flex flex-col items-center"
                   style={{
                     backfaceVisibility: 'hidden', 
                   }}
                 >
-                 <p className="text-center">
-                 Proven track records: 
-          Engaging with 
-          businesses that have 
-          validated concepts 
-          and demonstrated 
-          market appeal.</p>
-                  
+                 <p className="text-center font-playfairdisplayb font-bold pb-10">
+                 Proven track records
+                 </p>
+                 <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/impliment.png"
+          alt="Implementing industry-leading practices"
+        />
                 </motion.div>
           
                 {/* Back Side */}
@@ -222,8 +223,7 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center">
-                 Proven track records: 
+                 <p className="text-center font-playfairdisplay italic  pt-4"> 
           Engaging with 
           businesses that have 
           validated concepts 
@@ -236,11 +236,11 @@ import { motion } from "framer-motion";
 
           
         {/* Row 2 (Additional boxes for 4+4 layout) */}
-        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto">
         </div> 
 
-
-          <motion.div
+              
+           <motion.div
                 whileHover={{
                   rotateY: 180, 
                 }}
@@ -248,7 +248,7 @@ import { motion } from "framer-motion";
                   duration: 0.6, 
                   ease: "easeInOut", 
                 }}
-                className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
+                className="bg-[#03045e] text-white p-2 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
                 style={{
                   perspective: '1000px', 
                   transformStyle: 'preserve-3d', 
@@ -261,13 +261,16 @@ import { motion } from "framer-motion";
                     backfaceVisibility: 'hidden', 
                   }}
                 >
-                 <p className="text-center">
-                 Scalability potential: 
-          Supporting teams 
-          with strong 
-          implementation 
-          skills and significant 
-          growth potential.</p>
+                  <p 
+          className="text-center font-playfairdisplayb font-bold pb-10 p-2">
+          Scalability potential 
+          </p>
+
+          <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/hands.png"
+          alt="Implementing industry-leading practices"
+        />
                   
                 </motion.div>
           
@@ -279,20 +282,24 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center">
-                 Scalability potential: 
-          Supporting teams 
-          with strong 
-          implementation 
-          skills and significant 
-          growth potential.</p>
+                  <p 
+          className="text-center font-playfairdisplayi italic  pt-4">
+         Supporting teams 
+with strong 
+implementation 
+skills and significant 
+growth potential.</p>
                 
           
                 </motion.div>
               </motion.div>
 
-          <div className="p-4 rounded shadow-md flex flex-col items-center">
-          </div> 
+
+
+             
+
+          <div className="pt-4 rounded shadow-md flex flex-col items-center">
+          </div>
           <motion.div
                 whileHover={{
                   rotateY: 180, 
@@ -301,7 +308,7 @@ import { motion } from "framer-motion";
                   duration: 0.6, 
                   ease: "easeInOut", 
                 }}
-                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
+                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
                 style={{
                   perspective: '1000px', 
                   transformStyle: 'preserve-3d', 
@@ -314,14 +321,13 @@ import { motion } from "framer-motion";
                     backfaceVisibility: 'hidden', 
                   }}
                 >
-                 <p className="text-center">
-                 Disrupting the status 
-          quo: Supporting 
-          businesses with 
-          fresh perspectives 
-          and unorthodox 
-          approaches to ageold challenges</p>
-                  
+                 <p className="text-center font-playfairdisplay font-bold pb-20 p-2">
+                 Beyond metrics</p>
+                 <img
+          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+          src="../src/assets/InImage/basket.png"
+          alt="Implementing industry-leading practices"
+        />
                 </motion.div>
           
                 {/* Back Side */}
@@ -332,17 +338,18 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center">
-                 Disrupting the status 
-          quo: Supporting 
-          businesses with 
-          fresh perspectives 
-          and unorthodox 
-          approaches to ageold challenges</p>
+                 <p className="text-center font-playfairdisplay italic  pt-4">
+                 Collaborating with 
+exceptional teams 
+equipped with agility 
+and a vision for 
+enduring success.</p>
                 
           
                 </motion.div>
               </motion.div>
+
+              
 
           <div className="p-4 rounded shadow-md flex flex-col items-center">
           </div> 

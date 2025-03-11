@@ -4,11 +4,11 @@ const Media = () => {
   const articles = [
     {
       title: "Public market vetersan Sandeep Shenoy floats PE fund, ropes in key LPs",
-      image: "#", // Replace with actual image URL
+      image: "../src/assets/images/media1.jpeg", // Replace with actual image URL
     },
     {
       title: "Agrileaf secures INR 16 crore in growth funding led by Capital-A and Samarsh Capital",
-      image: "#", // Replace with actual image URL
+      image: "../src/assets/images/media2.jpeg", // Replace with actual image URL
     },
   ];
 
@@ -85,8 +85,11 @@ const Media = () => {
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {articles.map((article, index) => (
           <div key={index} className="flex flex-col">
-            <div className="w-full h-72 bg-gray-300"></div>
+            <div className="w-full h-72 bg-gray-300">
+            <img src={article.image} alt={article.title} className="w-full h-full object-fill " />
+            </div>
             <p className="mt-4 text-lg font-serif text-black">{article.title}</p>
+
           </div>
         ))}
       </div>

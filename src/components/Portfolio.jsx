@@ -9,7 +9,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div id='porfolia' className='px-20 bg-[#ebe6e0]'>
+    <div id='portfolio' className='px-20 bg-[#ebe6e0]'>
     <h1 className="text-[#f5700d] font-gothamb text-2xl my-8">PORTFOLIO</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

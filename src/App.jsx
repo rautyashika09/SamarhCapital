@@ -8,15 +8,19 @@ import Contacts from "./components/Contacts"
 import Footer from "./components/Footer"
 import Portfolio from "./components/Portfolio"
 import Media from "./components/Media"
+import AboutUs from "./components/AboutUs"
+import Charter from "./components/Charter"
 export default function App() {
   return (
     <div>
       <div className="bg-[#ebe6e0] overflow-x-hidden">
       <Header/>
       <HomePage />
+      <AboutUs/>
       < Thesis />
       <Criteria />
       <Team />
+      <Charter />
       <Portfolio />
       <Media />
       <Contacts />

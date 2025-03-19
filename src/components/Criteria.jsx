@@ -172,7 +172,7 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center font-playfairdisplay italic  pt-4"> 
+                 <p className="text-center font-playfairdisplay italic pt-12"> 
           Partnering with 
           founders focused on 
           sustainable growth.</p>
@@ -223,7 +223,7 @@ import { motion } from "framer-motion";
                     transform: 'rotateY(180deg)', 
                   }}
                 >
-                 <p className="text-center font-playfairdisplay italic  pt-4"> 
+                 <p className="text-center font-playfairdisplay italic pt-10"> 
           Engaging with 
           businesses that have 
           validated concepts 

@@ -6,61 +6,80 @@ const AboutUs = () => {
   return (
     // about Us
 <div id='about'>
-    <section className="relative bg-[#00dbba] min-h-screen">
-          <div className="container px-20 flex flex-col lg:flex-row items-center justify-between">
-            {/* Left Content */}
-            <motion.div
-            whileInView={{opacity:1, x: 0}}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.7}}
-            className="lg:w-1/2 pt:10 mt-4 lg:pt-0 lg:pl-10 lg:mb-0">
-              <h1 className="text-6xl lg:text-7xl font-playfairdisplay text-[black] mb-6">About Us</h1>
-            </motion.div>
-    
-            {/* Right Content - Grid of Images */}
-            <motion.div
-            whileInView={{opacity:1, x: 0}}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.7}}
-            className="lg:w-1/2 grid grid-cols-2 lg:p-12 ">
-            <div className="aspect-square flex items-centerp justify-center rounded-full">
-                    <div className="text-[#03045e] transform ">
-                      <img src="../src/assets/InImage/bplus.png" alt="arrow" />
-                    </div>
-                  </div>
-                  <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-b-full">
-                    <motion.div
-                     whileHover={{
-                      x: 60,         // Moves the arrow to the right
-                      opacity: 0,    // Makes the arrow invisible
-                    }}
-                    transition={{
-                      duration: 0.5,  // Duration of the transition (how long it takes)
-                    }}
-                    className="text-white p-4 transform ">
-                      <img src="../src/assets/InImage/arrow.png" alt="arrow" />
-                    </motion.div>
-                  </div>
-                  <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
-                    <div className="text-white p-4 transform ">
-                      <motion.img
-                      whileHover={{
-                        rotateX: 180, // Flip the element on the X-axis by 180 degrees
-                      }}
-                      transition={{
-                        duration: 0.5, // Duration of the flip transition
-                      }}
-                      src="../src/assets/InImage/tInfinity.png" alt="arrow" />
-                    </div>
-                  </div>
-            </motion.div>
-    
-          </div>
-        </section>
+  
+          <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
+            <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              {/* Left Side - Text Content */}
+              <div className="mt-10 ">
+                <motion.h2
+                whileInView={{opacity:1, x:0}}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{duration: 0.5}}
+                className="text-5xl lg:text-6xl font-playfairdisplayb text-white">
+                   About Us
+                </motion.h2>
+                <motion.p
+                whileInView={{opacity:1, x:0}}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{duration: 1}}
+                className="text-3xl lg:text-5xl font-playfairdisplayi mt-4 mr-4 lg:mt-4 text-[#03045e]">
+                   We are dedicated to becoming a
+                               trusted partner 
+                              for emerging leaders from the SME segment - helping
+                              them shape the future of India's market landscape.
+                </motion.p>
+              </div>
+        
+              {/* Right Side - Grid Layout for Icons & Images */}
+              <motion.div
+              whileInView={{opacity:1, x: 0}}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.7}}
+              className="grid grid-cols-2 py-20 mt-10 pl-12 p-28 lg:p-20">
+              <div className="aspect-square flex items-center justify-center rounded">
+                        <div className="text-white w-full h-full transform ">
+                          <motion.img
+                           whileHover={{ rotate: 360 }}
+                           transition={{ duration: 1 }}
+                          src="../src/assets/InImage/bplus.png" alt="arrow" />
+                        </div>
+                      </div>
+                      <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-b-[75px]">
+                        <div className="text-white transform ">
+                          <motion.img
+                          whileHover={{
+                            rotateY: 180, // Flip the element on the X-axis by 180 degrees
+                          }}
+                          transition={{
+                            duration: 0.5, // Duration of the flip transition
+                          }}
+                          src="../src/assets/InImage/Arrow.png" alt="Errow" />
+                        </div>
+                      </div>
+                      <div className="aspect-square bg-[#03045e] flex items-center justify-center rounded-br-[75px]">
+                        <div className="text-white w-full h- transform p-4">
+                          <motion.img
+                          whileHover={{
+                            rotateX: 180, // Flip the element on the X-axis by 180 degrees
+                          }}
+                          transition={{
+                            duration: 0.5, // Duration of the flip transition
+                          }}
+                          src="../src/assets/InImage/infinity.png" alt="arrow" />
+                        </div>
+                      </div>
+                      
+              </motion.div>
+            </div>
+          </section>
 {/* 
         // content */}
 
-          <div className="bg-[#e6e6e6] bg-[url('../src/assets/images/bgErrow.png')] bg-cover bg-center h-full w-full  flex flex-col  items-center justify-center p-6 lg:mx-20 my-10">
+          <div className="bg-[#e6e6e6] bg-[url('../src/assets/images/bgErrow.png')] bg-cover bg-center h-full w-full  flex flex-col  items-center justify-center p-6 my-10">
+
+          
+      <h2 className="text-lg font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl pb-4">
+      The Indian SME segment has historically been underserved in financial markets. However, transformative changes over the past decade have set the stage for significant growth in this sector:      </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:pl-36">
                 {/* Row 1 */}

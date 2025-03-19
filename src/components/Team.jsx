@@ -95,7 +95,7 @@ const Team = () => {
           {/* Team Member 1 */}
           <div className="flex flex-col items-center">
             <img 
-              src="../src/assets/investors/sandeep.Jpg"
+              src="../src/assets/investors/Sandeep.JPG"
               alt="Sandeep Shenoy"
               className="w-48 h-48 rounded-full mb-6"
             />
@@ -128,7 +128,7 @@ const Team = () => {
           {/* Team Member 2 */}
           <div className="flex flex-col items-center">
             <img 
-              src="../src/assets/investors/Shreyas.JPG"
+              src="../src/assets/investors/Shreyas.jpeg"
               alt="Shreyas Ravikumar"
               className="w-48 h-48 rounded-full mb-6"
             />

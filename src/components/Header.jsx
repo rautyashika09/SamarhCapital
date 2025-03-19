@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       {/* Top Bar */}
-      <div className="py-2">
+      {/* <div className="py-2">
         <div className="container mx-auto px-4 flex justify-end items-center space-x-4 text-sm">
           <a href="#contact" className="text-gray-600 hover:text-gray-900">CONTACT US</a>
           <span className="text-gray-300">|</span>
@@ -29,14 +29,14 @@ function Header() {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* Main Header */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex flex-col">
-            <img className='h-14 w-auto pb-4' src="../src/assets/logo.png" alt="logo" />
+            <img className='h-16 w-auto pb-4' src="../src/assets/logo.png" alt="logo" />
             {/* <a href="../src/assets/logo.png" className="text-2xl font-bold">
             </a> */}
             <div className="flex flex-col">

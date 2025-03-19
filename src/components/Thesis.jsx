@@ -8,19 +8,19 @@ const Thesis = () => {
          <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left Side - Text Content */}
-      <div className="lg:-mt-40">
+      <div className="mt-10 lg:-mt-40">
         <motion.h2
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 0.5}}
-        className="text-4xl lg:text-6xl font-playfairdisplayb text-white">
+        className="text-5xl lg:text-6xl font-playfairdisplayb text-white">
           Our thesis
         </motion.h2>
         <motion.p
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 1}}
-        className="text-2xl lg:text-5xl font-playfairdisplayi mr-4 lg:mt-4 text-[#03045e]">
+        className="text-3xl lg:text-5xl font-playfairdisplayi mt-4 mr-4 lg:mt-4 text-[#03045e]">
           The Indian SME segment has historically been underserved by the financial 
           markets – Transformative changes over the past decade have set the stage 
           for significant growth.
@@ -32,7 +32,7 @@ const Thesis = () => {
       whileInView={{opacity:1, x: 0}}
       initial={{ opacity: 0, x: 100 }}
       transition={{ duration: 0.7}}
-      className="grid grid-cols-2 py-20 mt-10 pl-12 p-20">
+      className="grid grid-cols-2 py-20 mt-10 pl-12 p-28 lg:p-20">
       <div className="aspect-square flex items-center justify-center rounded">
                 <div className="text-white w-full h-full transform ">
                   <motion.img

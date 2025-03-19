@@ -3,9 +3,14 @@ import { motion } from "framer-motion"
 const Portfolio = () => {
 
   const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false); 
+
+  // const handleClick = () => {
+  //   window.location.href = 'https://www.thehindu.com/news/cities/Mangalore/agrileaf-secures-16-crore-in-growth-funding/article68955507.ece'; 
+  // };
 
   const handleClick = () => {
-    window.location.href = 'https://www.thehindu.com/news/cities/Mangalore/agrileaf-secures-16-crore-in-growth-funding/article68955507.ece'; // Replace with your desired URL
+    setIsExpanded(!isExpanded); // Toggle expansion on click
   };
 
   return (
@@ -86,15 +91,8 @@ const Portfolio = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
     </div>
-      {/* <div className="rounded-lg flex justify-between shadow-md px-2 pt-6 pb-20 hover:shadow-lg transition-shadow">
-        <img 
-          src="../src/assets/InImage/Agrilife.png" 
-          alt="Agrileaf" 
-          className="w-14 h-14 lg:w-28 lg:h-28 p-1 text-start rounded-full border-2 self-start "
-        />
-        <h3 className="text:lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
-      </div> */}
-      <div
+
+      {/* <div
       className={`rounded-lg flex flex-col justify-between shadow-md px-2 pt-6 pb-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${
        isHovered ? 'min-h-48 max-h-64' : 'min-h-48'
       }`}
@@ -114,6 +112,64 @@ const Portfolio = () => {
         <p className="text-sm lg:text-base mt-2">
           Agrileaf, manufacturer and exporter of biodegradable dinnerware made from areca leaf and based near Dharmasthala, has secured ₹16 crore in growth funding .....
         </p>
+      )}
+    </div> */}
+
+<div
+      className={`rounded-lg flex flex-col justify-between shadow-md px-2 pt-6 pb-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${
+        isHovered ? 'min-h-48 max-h-64' : 'min-h-48'
+      }`}
+      onMouseEnter={() => setIsHovered(false)}
+      //  onMouseLeave={() => setIsHovered(true)}
+      onClick={handleClick}
+    >
+      <div className="flex justify-between">
+        <img
+          src="../src/assets/InImage/Agrilife.png"
+          alt="Agrileaf"
+          className="w-14 h-14 lg:w-24 lg:h-24 p-1 text-start rounded-full border-2 self-start"
+        />
+        <h3 className="text-lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
+      </div>
+      
+      {/* Know More Button */}
+      <button
+        onClick={handleClick}
+        className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-blue-600 transition-all duration-300"
+      >
+        {isExpanded ? 'Show Less' : 'Know More'}
+      </button>
+
+      {/* Content that expands on click */}
+      {isExpanded && (
+        <div className="mt-4">
+          <p className="text-sm lg:text-base">
+          Agrileaf A premier Indian manufacturer and leading exporter of biodegradable and eco-friendly dinnerware. Agrileaf creates 100% natural, backyard-compostable dinnerware from fallen areca leaves, offering a sustainable alternative to plastic, paper, and bagasse plates.
+          </p>
+          
+          <div className="mt-4">
+            <h4 className="font-semibold text-lg">Founders:</h4>
+            <ul className="list-disc pl-5">
+              <li>
+                <a href="https://www.linkedin.com/in/avinash-rao-baaa768/" className="text-blue-500 hover:underline">
+                  Avinash Rao
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/athishay-jain-389a7b19/" className="text-blue-500 hover:underline">
+                  Atishay Jain
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-4">
+            <h4 className="font-semibold text-lg">Website:</h4>
+            <a href="https://agrileaf.in/" className="text-blue-500 hover:underline">
+              agrileaf.in
+            </a>
+          </div>
+        </div>
       )}
     </div>
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

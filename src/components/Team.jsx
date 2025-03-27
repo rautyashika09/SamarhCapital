@@ -106,7 +106,7 @@ const Team = () => {
                  initial={{ opacity: 0, x: -100 }}
                  transition={{ duration: 0.5}}
                 className="text-3xl font-playfairdisplayb font-bold text-[#03045e]">Sandeep Shenoy</motion.h3>
-                <a href="https://www.linkedin.com/in/sandeep-shenoy-2a51b32/" className="text-blue-600">
+                <a href="https://www.linkedin.com/in/sandeep-shenoy-2a51b32/" target="_blank" rel="noopener noreferrer" className="text-blue-600">
                   <Linkedin className="w-6 h-6" />
                 </a>
               </div>
@@ -139,7 +139,7 @@ const Team = () => {
                  initial={{ opacity: 0, x: 100 }}
                  transition={{ duration: 0.5}}
                 className="text-3xl font-playfairdisplayb font-bold text-[#03045e]">Shreyas Ravikumar</motion.h3>
-                <a href="https://www.linkedin.com/in/shreyas-ravikumar-048b444b/%20/" className="text-blue-600">
+                <a href="https://www.linkedin.com/in/shreyas-ravikumar-048b444b/%20/" target="_blank" rel="noopener noreferrer" className="text-blue-600">
                   <Linkedin className="w-6 h-6" />
                 </a>
               </div>
@@ -185,7 +185,7 @@ const Team = () => {
              initial={{ opacity: 0, x: -100 }}
              transition={{ duration: 0.5}}
             className="text-3xl font-playfairdisplayb font-bold text-[#03045e]">Mohandas Pai</motion.h3>
-                <a href="https://www.linkedin.com/in/mohandaspai/" className="text-blue-600">
+                <a href="https://www.linkedin.com/in/mohandaspai/" target="_blank" rel="noopener noreferrer" className="text-blue-600">
                   <Linkedin className="w-6 h-6" />
                 </a>
               </div>
@@ -213,7 +213,7 @@ const Team = () => {
                  initial={{ opacity: 0, x: 100 }}
                  transition={{ duration: 0.5}}
                 className="text-3xl font-playfairdisplayb font-bold text-[#03045e]">K Ullas Kamath</motion.h3>
-                <a href="https://www.linkedin.com/in/ullas-kamath-586a03287/" className="text-blue-600">
+                <a href="https://www.linkedin.com/in/ullas-kamath-586a03287/" target="_blank" rel="noopener noreferrer" className="text-blue-600">
                   <Linkedin className="w-6 h-6" />
                 </a>
               </div>

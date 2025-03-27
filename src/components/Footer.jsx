@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id='footer' className="mx-auto pt-8 mt-6 mb-10 bg-[#ebe6e0]">
     <div className="">
-      <div className="flex justify-center space-x-6 mb-4">
+      {/* <div className="flex justify-center space-x-6 mb-4">
         <a href="#" className="text-[white] h-10 w-10 bg-blue-950 rounded-full pt-2 pl-2 text-center hover:opacity-80">
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
@@ -25,7 +25,7 @@ const Footer = () => {
             <path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073a42.153 42.153 0 0 0-.767-1.68c2.31-1 4.165-2.358 5.548-4.082a9.863 9.863 0 0 1 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68a46.287 46.287 0 0 0-3.488-5.438A9.894 9.894 0 0 1 12 2.087c2.275 0 4.368.779 6.043 2.072zM7.527 3.166a44.59 44.59 0 0 1 3.537 5.381c-2.43.715-5.331 1.082-8.684 1.105a9.931 9.931 0 0 1 5.147-6.486zM2.087 12l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48A9.865 9.865 0 0 1 2.087 12zm3.829 7.02c1.969-3.088 4.482-5.098 7.598-6.027a39.137 39.137 0 0 1 2.043 7.46c-3.349 1.291-6.953.666-9.641-1.433zm11.586.43a41.098 41.098 0 0 0-1.92-7.016c2.006-.277 4.145-.155 6.416.365a9.867 9.867 0 0 1-4.496 6.651z"/>
           </svg>
         </a>
-      </div>
+      </div> */}
       </div>
       <p className="bg-white py-4 text-center font-gothamb text-black text-2xl">
         Copyright © 2025 Samarsh Capital. All Rights Reserved.

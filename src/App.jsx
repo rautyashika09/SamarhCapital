@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio"
 import Media from "./components/Media"
 import AboutUs from "./components/AboutUs"
 import Charter from "./components/Charter"
+import { Vision } from "./components/Vision"
 export default function App() {
   return (
     <div>
@@ -18,9 +19,10 @@ export default function App() {
       <HomePage />
       <AboutUs/>
       < Thesis />
+      <Charter />
+      < Vision />
       <Criteria />
       <Team />
-      <Charter />
       <Portfolio />
       <Media />
       <Contacts />

@@ -21,7 +21,7 @@ function HomePage() {
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
             {/* Left Content */}
             <div className="lg:w-1/2">
-              <h1 className="text-5xl font-light mb-6 lg:text-8xl">
+              <h1 className="text-5xl font-light mb-6 lg:text-[90px]">
                 <motion.span
                 variants={container(0)}
                 initial="hidden"
@@ -179,7 +179,7 @@ function HomePage() {
           backfaceVisibility: 'hidden', // Hide the back side during rotation
         }}
       >
-        <p className="text-center pb-10">
+        <p className="text-center font-bold pb-10">
           Implementing industry-leading practices.
         </p>
         <img
@@ -225,19 +225,20 @@ function HomePage() {
       }}
     >
       {/* Front Side */}
-      <motion.div
-        className="flex flex-col items-center"
-        style={{
-          backfaceVisibility: 'hidden', 
-        }}
-      >
-        <p className="text-center pb-10 ">
-        Tailored growth strategies.
-        </p>
-        <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
-      </motion.div>
+
+ <motion.div
+                className="flex flex-col items-center"
+                style={{
+                  backfaceVisibility: 'hidden', 
+                }}
+              >
+                <p className="text-center pb-10 font-playfairdisplay font-bold">
+                Tailored growth strategies.
+                </p>
+                <img
+                  className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
+                  src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
+              </motion.div>
 
       {/* Back Side */}
       <motion.div
@@ -247,7 +248,7 @@ function HomePage() {
           transform: 'rotateY(180deg)', 
         }}
       >
-        <p className="text-center pb-10">
+        <p className="text-center font-bold pb-10">
         Tailored growth strategies innovation.
         </p>
         <img
@@ -279,7 +280,7 @@ function HomePage() {
           backfaceVisibility: 'hidden', 
         }}
       >
-        <p className="text-center pb-10 ">
+        <p className="text-center pb-10 font-bold">
         Expanding Professional Networks.
         </p>
         <img
@@ -328,7 +329,7 @@ function HomePage() {
           backfaceVisibility: 'hidden', 
         }}
       >
-        <p className="text-center pb-10 ">
+        <p className="text-center font-bold pb-10 ">
         Offering Specialized Industry Knowledge.
         </p>
         <img
@@ -357,7 +358,7 @@ function HomePage() {
         </div>
       </div>
 
-      <h2 className="text-lg font-playfairdisplayb text-black my-12 mx-4 text-center lg:text-3xl">
+      <h2 className="text-lg font-playfairdisplayb text-black my-12 mx-4 lg:mr-32 text-center lg:text-3xl">
         “We are conscientious capitalists committed to fostering innovation and growth by bringing emerging and unrecognized entrepreneurs into the mainstream.”
       </h2>
     </div>

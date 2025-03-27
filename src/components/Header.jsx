@@ -36,7 +36,7 @@ function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex flex-col">
-            <img className='h-16 w-auto pb-4' src="../src/assets/logo.png" alt="logo" />
+            <img className='h-20 w-auto -ml-4' src="../src/assets/logo.png" alt="logo" />
             {/* <a href="../src/assets/logo.png" className="text-2xl font-bold">
             </a> */}
             <div className="flex flex-col">

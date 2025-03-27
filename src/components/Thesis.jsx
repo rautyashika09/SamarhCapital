@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Thesis = () => {
   return (
     <div id='thesis'>
-         <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
+         <section className="bg-[#00dbba] pl-2 min-h full flex items-center justify-center my-6">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left Side - Text Content */}
       <div className="mt-10 lg:-mt-40">
@@ -110,7 +110,7 @@ const Thesis = () => {
       }}
       viewport={{ once: true }}
       className=" bg-[#00dbba] text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
-          <p className="text-center pb-16">
+          <p className="text-center pb-16 lg:px-8">
           Buoyant domestic 
           demand.
           </p>
@@ -125,7 +125,7 @@ const Thesis = () => {
       }}
       viewport={{ once: true }}
         className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
-          <p className="text-center pb-16">
+          <p className="text-center pb-16 lg:px-8">
           Benign fiscal 
           incentives
           </p>
@@ -186,7 +186,7 @@ const Thesis = () => {
           <p className="text-center pb-16">
           Engineering
           </p>
-          <img src="../src/assets/InImage/setting.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end' />
+          <img src="../src/assets/InImage/setting.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 self-end' />
         </motion.div>
         <motion.div
       initial={{ scale: 0.5 }} 

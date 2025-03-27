@@ -7,7 +7,7 @@ const AboutUs = () => {
     // about Us
 <div id='about'>
   
-          <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
+          <section className="bg-[#00dbba] pl-2 min-h full flex items-center justify-center my-6">
             <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* Left Side - Text Content */}
               <div className="mt-10 ">

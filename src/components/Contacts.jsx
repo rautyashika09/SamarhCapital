@@ -22,7 +22,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id='contact' className="min-h-screen bg-[#f5f3ef]">
+    <div id='contact' className="min-h-screen bg-[#ebe6e0]">
        <main className="max-w-7xl mx-auto px-4 py-8">
        <section className="relative ">
         <div className="container mx-auto px-4 py-20">

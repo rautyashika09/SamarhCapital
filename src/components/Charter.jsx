@@ -5,10 +5,10 @@ const Charter = () => {
     <div id='charter'>
         {/* Upper Section */}
 
-        <section className="bg-[#00dbba] min-h full flex items-center justify-center my-6">
+        <section className="bg-[#00dbba] min-h full flex items-center pl-2 justify-center my-6">
     <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       {/* Left Side - Text Content */}
-      <div className="lg:-mt-40">
+      <div className="mt-4 lg:-mt-40">
         <motion.h2
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
@@ -79,19 +79,19 @@ const Charter = () => {
                 <section className="min-h-full flex items-center justify-center my-6 py-5">
                 <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                  {/* Left Side - Text Content */}
-      <div className="">
+      <div className="pl-2">
         <motion.h2
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 0.5}}
-        className="text-4xl lg:text-6xl font-playfairdisplayb text-[#03045e] pb-4">
+        className="text-4xl lg:text-6xl text-center lg:text-left font-playfairdisplayb text-[#03045e] pb-4">
           Purpose
         </motion.h2>
         <motion.ul
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 1}}
-        className="text-xl lg:text-2xl font-gothamb lg:mt-4 text-[#03045e]">
+        className="text-xl lg:text-2xl font-gothamb text-center lg:text-left lg:mt-4 text-[#03045e]">
             <li className='pb-2'>Build companies on a foundation of integrity and purposeful growth.
             </li>
             <li className='pb-2'>Help transformative SMEs achieve their full potential.
@@ -101,19 +101,19 @@ const Charter = () => {
         </motion.ul>
       </div>
                 {/* right side */}
-      <div className="">
+      <div className="pl-2">
         <motion.h2
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 0.5}}
-        className="text-4xl lg:text-6xl font-playfairdisplayb text-[#03045e] pb-4">
+        className="text-4xl lg:text-6xl text-center lg:text-left font-playfairdisplayb text-[#03045e] pb-4">
           Culture
         </motion.h2>
         <motion.ul
         whileInView={{opacity:1, x:0}}
         initial={{ opacity: 0, x: -100 }}
         transition={{duration: 1}}
-        className="text-xl lg:text-2xl  lg:mt-4 text-[#03045e] font-gothamb">
+        className="text-xl lg:text-2xl text-center lg:text-left lg:mt-4 text-[#03045e] font-gothamb">
                 <li className='pb-2'>Foster collaboration through synergistic skillsets.
                 </li>
                 <li className='pb-2'>Empower enterprising individuals driven by our vision.

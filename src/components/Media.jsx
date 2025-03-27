@@ -81,12 +81,12 @@ const Media = () => {
 
     {/* Media Section */}
 
-    <div className="bg-[#f9f6f2] p-10">
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    <div className="bg-[#f9f6f2] py-10">
+      <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {articles.map((article, index) => (
           <div key={index} className="flex flex-col">
-            <div className="w-full h-72 bg-gray-300">
-            <img src={article.image} alt={article.title} className="w-full h-full object-fill " />
+            <div className="w-full h-full bg-[#ebe6e0]">
+            <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
             </div>
             <p className="mt-4 text-lg font-serif text-black">{article.title}</p>
 

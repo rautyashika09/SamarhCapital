@@ -92,46 +92,24 @@ const Portfolio = () => {
       </svg>
     </div>
 
-      {/* <div
-      className={`rounded-lg flex flex-col justify-between shadow-md px-2 pt-6 pb-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${
-       isHovered ? 'min-h-48 max-h-64' : 'min-h-48'
-      }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onClick={handleClick}
-    >
-      <div className="flex justify-between">
-        <img
-          src="../src/assets/InImage/Agrilife.png"
-          alt="Agrileaf"
-          className="w-14 h-14 lg:w-24 lg:h-24 p-1 text-start rounded-full border-2 self-start"
-        />
-        <h3 className="text-lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
-      </div>
-      {isHovered && (
-        <p className="text-sm lg:text-base mt-2">
-          Agrileaf, manufacturer and exporter of biodegradable dinnerware made from areca leaf and based near Dharmasthala, has secured ₹16 crore in growth funding .....
-        </p>
-      )}
-    </div> */}
+    
 
-<div
+    <div
       className={`rounded-lg flex flex-col justify-between shadow-md px-2 pt-6 pb-6 hover:shadow-lg transition-all duration-300 cursor-pointer ${
         isHovered ? 'min-h-48 max-h-64' : 'min-h-48'
       }`}
-      onMouseEnter={() => setIsHovered(false)}
-      //  onMouseLeave={() => setIsHovered(true)}
-      onClick={handleClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex justify-between">
         <img
           src="../src/assets/InImage/Agrilife.png"
           alt="Agrileaf"
-          className="w-14 h-14 lg:w-24 lg:h-24 p-1 text-start rounded-full border-2 self-start"
+          className="w-14 h-14 lg:w-24 lg:h-24 rounded-full object-center"
         />
         <h3 className="text-lg lg:text-3xl font-playfairdisplay text-end">Agrileaf</h3>
       </div>
-      
+
       {/* Know More Button */}
       <button
         onClick={handleClick}
@@ -140,38 +118,51 @@ const Portfolio = () => {
         {isExpanded ? 'Show Less' : 'Know More'}
       </button>
 
-      {/* Content that expands on click */}
+      {/* Full Page Popup for expanded content */}
       {isExpanded && (
-        <div className="mt-4">
-          <p className="text-sm lg:text-base">
-          Agrileaf A premier Indian manufacturer and leading exporter of biodegradable and eco-friendly dinnerware. Agrileaf creates 100% natural, backyard-compostable dinnerware from fallen areca leaves, offering a sustainable alternative to plastic, paper, and bagasse plates.
-          </p>
-          
-          <div className="mt-4">
-            <h4 className="font-semibold text-lg">Founders:</h4>
-            <ul className="list-disc pl-5">
-              <li>
-                <a href="https://www.linkedin.com/in/avinash-rao-baaa768/" className="text-blue-500 hover:underline">
-                  Avinash Rao
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/athishay-jain-389a7b19/" className="text-blue-500 hover:underline">
-                  Atishay Jain
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg w-11/12 md:w-3/4 lg:w-1/2">
+            <h3 className="text-2xl font-bold mb-4">Agrileaf</h3>
+            <p className="text-sm lg:text-base mb-4">
+              Agrileaf is a premier Indian manufacturer and leading exporter of biodegradable and eco-friendly dinnerware.
+              Agrileaf creates 100% natural, backyard-compostable dinnerware from fallen areca leaves, offering a sustainable
+              alternative to plastic, paper, and bagasse plates.
+            </p>
 
-          <div className="mt-4">
-            <h4 className="font-semibold text-lg">Website:</h4>
-            <a href="https://agrileaf.in/" className="text-blue-500 hover:underline">
-              agrileaf.in
-            </a>
+            <div className="mt-4">
+              <h4 className="font-semibold text-lg">Founders:</h4>
+              <ul className="list-disc pl-5">
+                <li>
+                  <a href="https://www.linkedin.com/in/avinash-rao-baaa768/" className="text-blue-500 hover:underline">
+                    Avinash Rao
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/athishay-jain-389a7b19/" className="text-blue-500 hover:underline">
+                    Atishay Jain
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <h4 className="font-semibold text-lg">Website:</h4>
+              <a href="https://agrileaf.in/" className="text-blue-500 hover:underline">
+                agrileaf.in
+              </a>
+            </div>
+
+            <button
+              onClick={handleClick} // Close the popup when clicking the button
+              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300"
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
     </div>
+
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       </div>
       <div className="bg-[#ebe6e0] rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">

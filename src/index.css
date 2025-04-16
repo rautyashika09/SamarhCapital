@@ -9,6 +9,11 @@
     /* Replace with actual Hindi font if needed */
   }
 
+  * {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
   @font-face {
     font-family: "GOTHAM-BOOK";
     src: url(../src/assets/fonts/GOTHAM-BOOK.OTF);

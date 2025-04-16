@@ -85,187 +85,181 @@ const AboutUs = () => {
                 {/* Row 1 */}
                 <div className="p-4 rounded shadow-md flex flex-col items-center">
                 </div>
+
+                 <motion.div
+                  whileHover={{ rotateY: 180 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] shadow-md"
+                  style={{
+                    perspective: '1000px',
+                    transformStyle: 'preserve-3d',
+                  }}
+                >
+                  {/* Front Side - Now includes matching border */}
                   <motion.div
-              whileHover={{
-                rotateY: 180, 
-              }}
-              transition={{
-                duration: 0.6, 
-                ease: "easeInOut", 
-              }}
-              className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center relative cursor-pointer"
-              style={{
-                perspective: '1000px', 
-                transformStyle: 'preserve-3d', 
-              }}
-            >
-              {/* Front Side */}
-              <motion.div
-                className="flex flex-col items-center"
-                style={{
-                  backfaceVisibility: 'hidden', // Hide the back side during rotation
-                }}
-              >
-                <p className="text-center pb-10 font-playfairdisplay font-bold">
-                Rising Domestic Demand
-                </p>
-                <img
-                  className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-                  src="../src/assets/InImage/impliment.png"
-                  alt="Implementing industry-leading practices"
-                />
-              </motion.div>
-        
-              {/* Back Side */}
-              <motion.div
-                className="absolute top-0 flex flex-col items-center p-2"
-                style={{
-                  backfaceVisibility: 'hidden', 
-                  transform: 'rotateY(180deg)', 
-                }}
-              >
-                <p className="text-center pb-10 font-playfairdisplay italic">
-                 Increased per capita income is driving local demand, creating new opportunities for SMEs.
-                </p>
-              </motion.div>
-            </motion.div>
+                    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] bg-tranparent p-4"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      zIndex: 10,
+                    }}
+                  >
+                    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-16">
+                    Rising Domestic Demand
+                    </p>
+                    <img
+                      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+                      src="../src/assets/InImage/tailored.png"
+                      alt="Front side"
+                    />
+                  </motion.div>
+                
+                  {/* Back Side - Also includes matching border */}
+                  <motion.div
+                    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] bg-transparent p-4"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      transform: 'rotateY(180deg)',
+                      zIndex: 5,
+                    }}
+                  >
+                    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                    Increased per capita income is driving local demand, creating new opportunities for SMEs.
+                    </p>
+                   
+                  </motion.div>
+                </motion.div>
+
                 <div className="p-4 rounded shadow-md flex flex-col items-center">
                 </div>
         
                 <motion.div
-              whileHover={{
-                rotateY: 180, 
-              }}
-              transition={{
-                duration: 0.6, 
-                ease: "easeInOut", 
-              }}
-              className="text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 border-2 border-[#00dbba] rounded shadow-md flex flex-col items-center relative cursor-pointer"
-              style={{
-                perspective: '1000px', 
-                transformStyle: 'preserve-3d', 
-              }}
-            >
-              {/* Front Side */}
-              <motion.div
-                className="flex flex-col items-center"
-                style={{
-                  backfaceVisibility: 'hidden', 
-                }}
-              >
-                <p className="text-center pb-10 font-playfairdisplay font-bold">
-               Government Initiatives
-                </p>
-                <img
-                  className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-                  src="../src/assets/InImage/tailored.png" alt="Tailored growth strategies" />
-              </motion.div>
-        
-              {/* Back Side */}
-              <motion.div
-                className="absolute top-0 flex flex-col items-center p-2"
-                style={{
-                  backfaceVisibility: 'hidden', 
-                  transform: 'rotateY(180deg)', 
-                }}
-              >
-                <p className="text-center pb-10 font-playfairdisplay italic">
-            Policies like ‘Ease of Doing Business’ and ‘Make in India’ are fostering SME growth.
-                </p>
+                  whileHover={{ rotateY: 180 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] shadow-md"
+                  style={{
+                    perspective: '1000px',
+                    transformStyle: 'preserve-3d',
+                  }}
+                >
+                  {/* Front Side - Now includes matching border */}
+                  <motion.div
+                    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] bg-tranparent p-4"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      zIndex: 10,
+                    }}
+                  >
+                    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-16">
+                    Government Initiatives
+                    </p>
+                    <img
+                      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+                      src="../src/assets/InImage/impliment.png"
+                      alt="Front side"
+                    />
+                  </motion.div>
+                
+                  {/* Back Side - Also includes matching border */}
+                  <motion.div
+                    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] bg-transparent p-4"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      transform: 'rotateY(180deg)',
+                      zIndex: 5,
+                    }}
+                  >
+                    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                    Policies like ‘Ease of Doing Business’ and ‘Make in India’ are fostering SME growth.                    </p>
+                   
+                  </motion.div>
+                </motion.div>
               
-        
-              </motion.div>
-            </motion.div>
                 {/* Row 2 (Additional boxes for 4+4 layout) */}
                
-                <motion.div
-              whileHover={{
-                rotateY: 180, 
-              }}
-              transition={{
-                duration: 0.6, 
-                ease: "easeInOut", 
-              }}
-              className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
+             <motion.div
+              whileHover={{ rotateY: 180 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
               style={{
-                perspective: '1000px', 
-                transformStyle: 'preserve-3d', 
+                perspective: '1000px',
+                transformStyle: 'preserve-3d',
               }}
             >
-              {/* Front Side */}
+              {/* Front Side - Now includes matching border */}
               <motion.div
-                className="flex flex-col items-center"
+                className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
                 style={{
-                  backfaceVisibility: 'hidden', 
+                  backfaceVisibility: 'hidden',
+                  zIndex: 10,
                 }}
               >
-                <p className="text-center pb-10 font-playfairdisplay font-bold">
-              Access to Technology and Skilled Labor
+                <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                Access to Technology and Skilled Labor
                 </p>
                 <img
-                  className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-                  src="../src/assets/InImage/expanding.png" alt="Building collaborative teams" />
+                  className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                  src="../src/assets/InImage/expanding.png"
+                  alt="Front side"
+                />
               </motion.div>
-        
-              {/* Back Side */}
+            
+              {/* Back Side - Also includes matching border */}
               <motion.div
-                className="absolute top-0 flex flex-col items-center p-2"
+                className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-4"
                 style={{
-                  backfaceVisibility: 'hidden', 
-                  transform: 'rotateY(180deg)', 
+                  backfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)',
+                  zIndex: 5,
                 }}
               >
-                <p className="text-center pb-10 font-playfairdisplay italic">
+                <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
                 SMEs now benefit from advanced technologies and an increasingly skilled workforce.
                 </p>
-        
               </motion.div>
             </motion.div>
+            
                 <div className="text-black p-4 rounded shadow-md flex flex-col items-center">
                 </div>
         
-                <motion.div
-              whileHover={{
-                rotateY: 180, 
-              }}
-              transition={{
-                duration: 0.6, 
-                ease: "easeInOut", 
-              }}
-              className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
+            <motion.div
+              whileHover={{ rotateY: 180 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
               style={{
-                perspective: '1000px', 
-                transformStyle: 'preserve-3d', 
+                perspective: '1000px',
+                transformStyle: 'preserve-3d',
               }}
             >
-              {/* Front Side */}
+              {/* Front Side - Now includes matching border */}
               <motion.div
-                className="flex flex-col items-center"
+                className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
                 style={{
-                  backfaceVisibility: 'hidden', 
+                  backfaceVisibility: 'hidden',
+                  zIndex: 10,
                 }}
               >
-                <p className="text-center pb-10 font-playfairdisplay font-bold">
-             Evolving Business Ecosystem
+                <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                Evolving Business Ecosystem
                 </p>
                 <img
-                  className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-                  src="../src/assets/InImage/offering.png" alt="Strategic partnerships" />
+                  className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                  src="../src/assets/InImage/expanding.png"
+                  alt="Front side"
+                />
               </motion.div>
-        
-              {/* Back Side */}
+            
+              {/* Back Side - Also includes matching border */}
               <motion.div
-                className="absolute top-0 flex flex-col items-center p-2"
+                className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-2"
                 style={{
-                  backfaceVisibility: 'hidden', 
-                  transform: 'rotateY(180deg)', 
+                  backfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)',
+                  zIndex: 5,
                 }}
               >
-                <p className="text-center pb-10 font-playfairdisplay italic">
-                 A shift toward lean manufacturing and value engineering has created a favorable environment for SME expansion.
-
-                        </p>
-        
+                <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                A shift toward lean manufacturing and value engineering has created a favorable environment for SME expansion.
+                </p>
               </motion.div>
             </motion.div>
                 <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">

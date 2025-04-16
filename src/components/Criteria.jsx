@@ -17,280 +17,243 @@ import { motion } from "framer-motion";
       <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto ">
         {/* Row 1 */}
 
-           <motion.div
-                whileHover={{
-                  rotateY: 180, 
-                }}
-                transition={{
-                  duration: 0.6, 
-                  ease: "easeInOut", 
-                }}
-                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb py-8 rounded shadow-md flex flex-col items-center"
-                style={{
-                  perspective: '1000px', 
-                  transformStyle: 'preserve-3d', 
-                }}
-              >
-                {/* Front Side */}
-                <motion.div
-                  className="flex flex-col items-center"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                  }}
-                >
-                  <p 
-          className="text-center p-2 font-playfairdisplayb font-bold pb-10">
-          Disrupting the status 
-          quo</p>
-
-          <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/beaker.png"
-          alt="Implementing industry-leading practices"
-        />
-                  
-                </motion.div>
-          
-                {/* Back Side */}
-                <motion.div
-                  className="absolute top-0 flex flex-col items-center p-2"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                    transform: 'rotateY(180deg)', 
-                  }}
-                >
-                  <p 
-          className="text-center font-playfairdisplayi italic  pt-4">
-          Supporting 
-          businesses with 
-          fresh perspectives 
-          and unorthodox 
-          approaches to age-old challenges</p>
-                
-          
-                </motion.div>
-              </motion.div>
+               <motion.div
+                            whileHover={{ rotateY: 180 }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
+                            style={{
+                              perspective: '1000px',
+                              transformStyle: 'preserve-3d',
+                            }}
+                          >
+                            {/* Front Side - Now includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                zIndex: 10,
+                              }}
+                            >
+                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              Disrupting the status 
+                              </p>
+                              <img
+                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                src="../src/assets/InImage/beaker.png"
+                                alt="Front side"
+                              />
+                            </motion.div>
+                          
+                            {/* Back Side - Also includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-2"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                transform: 'rotateY(180deg)',
+                                zIndex: 5,
+                              }}
+                            >
+                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              Supporting 
+                              businesses with 
+                              fresh perspectives 
+                              and unorthodox 
+                              approaches to age-old challenges                              </p>
+                            </motion.div>
+                          </motion.div>
 
         <div className="p-4 rounded shadow-md flex flex-col items-center">
         </div>
 
 
-          <motion.div
-                whileHover={{
-                  rotateY: 180, 
-                }}
-                transition={{
-                  duration: 0.6, 
-                  ease: "easeInOut", 
-                }}
-                className="text-gray-700 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
-                style={{
-                  perspective: '1000px', 
-                  transformStyle: 'preserve-3d', 
-                }}
-              >
-                {/* Front Side */}
-                <motion.div
-                  className="flex flex-col items-center"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplayb font-bold pb-10">
-          Growth-oriented 
-          entrepreneurs
-        </p>
-        <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/tailored.png"
-          alt="Implementing industry-leading practices"
-        />    
-                </motion.div>
-          
-                {/* Back Side */}
-                <motion.div
-                  className="absolute top-0 flex flex-col items-center p-2"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                    transform: 'rotateY(180deg)', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplay italic pt-12"> 
-          Partnering with 
+              <motion.div
+                            whileHover={{ rotateY: 180 }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] text-black shadow-md"
+                            style={{
+                              perspective: '1000px',
+                              transformStyle: 'preserve-3d',
+                            }}
+                          >
+                            {/* Front Side - Now includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] text-black p-4"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                zIndex: 10,
+                              }}
+                            >
+                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              Growth-oriented 
+                               entrepreneurs
+                              </p>
+                              <img
+                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                src="../src/assets/InImage/tailored.png"
+                                alt="Front side"
+                              />
+                            </motion.div>
+                          
+                            {/* Back Side - Also includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] text-black p-2"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                transform: 'rotateY(180deg)',
+                                zIndex: 5,
+                              }}
+                            >
+                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              Partnering with 
           founders focused on 
-          sustainable growth.</p>
-                
-          
-                </motion.div>
-              </motion.div>
+          sustainable growth.                             </p>
+                            </motion.div>
+                          </motion.div>
 
           <div className=" p-4 rounded shadow-md flex flex-col items-center">
         </div>  
 
-          <motion.div
-                whileHover={{
-                  rotateY: 180, 
-                }}
-                transition={{
-                  duration: 0.6, 
-                  ease: "easeInOut", 
-                }}
-                className="text-gray-700 p-2 text-lg lg:text-2xl font-playfairdisplayb py-8 rounded border-2 border-[#00dbba] shadow-md flex flex-col items-center"
-                style={{
-                  perspective: '1000px', 
-                  transformStyle: 'preserve-3d', 
-                }}
-              >
-                {/* Front Side */}
-                <motion.div
-                  className= "flex flex-col items-center"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplayb font-bold pb-10">
-                 Proven track records
-                 </p>
-                 <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/impliment.png"
-          alt="Implementing industry-leading practices"
-        />
-                </motion.div>
-          
-                {/* Back Side */}
-                <motion.div
-                  className="absolute top-0 flex flex-col items-center p-2"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                    transform: 'rotateY(180deg)', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplay italic pt-10"> 
-          Engaging with 
+              <motion.div
+                            whileHover={{ rotateY: 180 }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] text-black shadow-md"
+                            style={{
+                              perspective: '1000px',
+                              transformStyle: 'preserve-3d',
+                            }}
+                          >
+                            {/* Front Side - Now includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] text-black p-4"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                zIndex: 10,
+                              }}
+                            >
+                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              Proven track records
+                              </p>
+                              <img
+                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                src="../src/assets/InImage/impliment.png"
+                                alt="Front side"
+                              />
+                            </motion.div>
+                          
+                            {/* Back Side - Also includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] text-black p-2"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                transform: 'rotateY(180deg)',
+                                zIndex: 5,
+                              }}
+                            >
+                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              Engaging with 
           businesses that have 
           validated concepts 
           and demonstrated 
-          market appeal.</p>
-                
-          
-                </motion.div>
-              </motion.div>
-
-          
+          market appeal.                            </p>
+                            </motion.div>
+                          </motion.div>
         {/* Row 2 (Additional boxes for 4+4 layout) */}
         <div className="grid grid-cols-1 md:grid-cols-5 max-w-6xl w-full pb-2 h-auto">
         </div> 
 
               
-           <motion.div
-                whileHover={{
-                  rotateY: 180, 
-                }}
-                transition={{
-                  duration: 0.6, 
-                  ease: "easeInOut", 
-                }}
-                className="bg-[#03045e] text-white p-2 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
-                style={{
-                  perspective: '1000px', 
-                  transformStyle: 'preserve-3d', 
-                }}
-              >
-                {/* Front Side */}
-                <motion.div
-                  className="flex flex-col items-center"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                  }}
-                >
-                  <p 
-          className="text-center font-playfairdisplayb font-bold pb-10 p-2">
-          Scalability potential 
-          </p>
-
-          <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/hands.png"
-          alt="Implementing industry-leading practices"
-        />
-                  
-                </motion.div>
-          
-                {/* Back Side */}
-                <motion.div
-                  className="absolute top-0 flex flex-col items-center p-2"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                    transform: 'rotateY(180deg)', 
-                  }}
-                >
-                  <p 
-          className="text-center font-playfairdisplayi italic  pt-4">
-         Supporting teams 
+               <motion.div
+                            whileHover={{ rotateY: 180 }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#03045e] text-black shadow-md"
+                            style={{
+                              perspective: '1000px',
+                              transformStyle: 'preserve-3d',
+                            }}
+                          >
+                            {/* Front Side - Now includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#03045e] text-white p-4"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                zIndex: 10,
+                              }}
+                            >
+                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              Scalability potential 
+                              </p>
+                              <img
+                                className="h-16 w-16 bg-[#03045e] lg:h-20 lg:w-20 self-start"
+                                src="../src/assets/InImage/beaker.png"
+                                alt="Front side"
+                              />
+                            </motion.div>
+                          
+                            {/* Back Side - Also includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#03045e] text-white p-2"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                transform: 'rotateY(180deg)',
+                                zIndex: 5,
+                              }}
+                            >
+                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              Supporting teams 
 with strong 
 implementation 
 skills and significant 
-growth potential.</p>
-                
-          
-                </motion.div>
-              </motion.div>
-
-
-
-             
+growth potential.                           </p>
+                            </motion.div>
+                          </motion.div>
 
           <div className="pt-4 rounded shadow-md flex flex-col items-center">
           </div>
-          <motion.div
-                whileHover={{
-                  rotateY: 180, 
-                }}
-                transition={{
-                  duration: 0.6, 
-                  ease: "easeInOut", 
-                }}
-                className="bg-[#00dbba] text-black text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center"
-                style={{
-                  perspective: '1000px', 
-                  transformStyle: 'preserve-3d', 
-                }}
-              >
-                {/* Front Side */}
-                <motion.div
-                  className="flex flex-col items-center"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplay font-bold pb-20 p-2">
-                 Beyond metrics</p>
-                 <img
-          className="text-[#00dbba] h-16 w-16 lg:h-24 lg:w-24 self-start p-2"
-          src="../src/assets/InImage/basket.png"
-          alt="Implementing industry-leading practices"
-        />
-                </motion.div>
-          
-                {/* Back Side */}
-                <motion.div
-                  className="absolute top-0 flex flex-col items-center p-2"
-                  style={{
-                    backfaceVisibility: 'hidden', 
-                    transform: 'rotateY(180deg)', 
-                  }}
-                >
-                 <p className="text-center font-playfairdisplay italic  pt-4">
-                 Collaborating with 
+         
+              <motion.div
+                            whileHover={{ rotateY: 180 }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
+                            style={{
+                              perspective: '1000px',
+                              transformStyle: 'preserve-3d',
+                            }}
+                          >
+                            {/* Front Side - Now includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                zIndex: 10,
+                              }}
+                            >
+                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              Beyond metrics
+                              </p>
+                              <img
+                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                src="../src/assets/InImage/basket.png"
+                                alt="Front side"
+                              />
+                            </motion.div>
+                          
+                            {/* Back Side - Also includes matching border */}
+                            <motion.div
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-2"
+                              style={{
+                                backfaceVisibility: 'hidden',
+                                transform: 'rotateY(180deg)',
+                                zIndex: 5,
+                              }}
+                            >
+                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              Collaborating with 
 exceptional teams 
 equipped with agility 
 and a vision for 
-enduring success.</p>
-                
-          
-                </motion.div>
-              </motion.div>
+enduring success.                             </p>
+                            </motion.div>
+                          </motion.div>
 
               
 

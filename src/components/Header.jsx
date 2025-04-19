@@ -32,7 +32,7 @@ function Header() {
       </div> */}
 
       {/* Main Header */}
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 lg:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex flex-col">

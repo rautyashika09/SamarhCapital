@@ -17,11 +17,11 @@ function HomePage() {
     <div className="min-h-screen bg-[#e6e6e6]">
       {/* Hero Section */}
       <section className="relative bg-[#e6e6e6] min-h-screen">
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 lg:px-10 pb-20 pt-5 lg:pt-5">
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
             {/* Left Content */}
             <div className="lg:w-1/2">
-              <h1 className="text-5xl font-light mb-6 lg:text-[90px]">
+              <h1 className="text-5xl font-light mb-6 lg:text-[85px]">
                 <motion.span
                 variants={container(0)}
                 initial="hidden"
@@ -55,7 +55,7 @@ function HomePage() {
             initial={{ x: 100, opacity:0 }}
             animate={{ x: 0, opacity:1 }}
             transition={{ duration: 1, delay:1.2 }}
-            className="lg:w-1/2 grid grid-cols-3">
+            className="lg:w-1/2 grid grid-cols-3 p-8">
               <div className="aspect-square">
                 <img 
                   src="../src/assets/images/img1.jpg"
@@ -141,7 +141,7 @@ function HomePage() {
           </div>
 
           {/* Scroll Down Indicator */}
-          <div className="absolute mb-4 pt-11 left-52 transform -translate-x-1/2 lg:bottom-16 lg:left-56">
+          <div className="absolute mb-4 pt-5 left-52 transform -translate-x-1/2 lg:bottom-16 lg:left-56">
             <div className="border border-[#03045e] rounded-full p-4">
               <a href="#thesis"><ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" /></a>
             </div>
@@ -154,7 +154,7 @@ function HomePage() {
       <div className="bg-[#e6e6e6] bg-[url('../src/assets/images/bgInfinity.png')] bg-cover bg-center h-full w-full  flex flex-col  items-center justify-center p-6 lg:mx-20 my-10">
       <h1 className="text-2xl lg:text-3xl text-black font-playfairdisplay self-start mb-8">Key Pointers/Messages</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:pl-36">
+      <div className="hidden lg:grid grid-cols-1 md:grid-cols-4 max-w-5xl w-full pb-5 lg:pl-36">
         {/* Row 1 */}
         <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
         </div>
@@ -162,7 +162,7 @@ function HomePage() {
     <motion.div
   whileHover={{ rotateY: 180 }}
   transition={{ duration: 0.6, ease: "easeInOut" }}
-  className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] shadow-md"
+  className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] shadow-md"
   style={{
     perspective: '1000px',
     transformStyle: 'preserve-3d',
@@ -170,17 +170,17 @@ function HomePage() {
 >
   {/* Front Side - Now includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] bg-tranparent p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] bg-tranparent px-4"
     style={{
       backfaceVisibility: 'hidden',
       zIndex: 10,
     }}
   >
-    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10 ">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10 ">
       Implementing industry-leading practices.
     </p>
     <img
-      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/impliment.png"
       alt="Front side"
     />
@@ -188,18 +188,18 @@ function HomePage() {
 
   {/* Back Side - Also includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] bg-transparent p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] bg-transparent p-4"
     style={{
       backfaceVisibility: 'hidden',
       transform: 'rotateY(180deg)',
       zIndex: 5,
     }}
   >
-    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb font-bold lg:pb-10">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
       Revolutionizing the industry with innovation.
     </p>
     <img
-      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/impliment.png"
       alt="Back side"
     />
@@ -212,7 +212,7 @@ function HomePage() {
     <motion.div
   whileHover={{ rotateY: 180 }}
   transition={{ duration: 0.6, ease: "easeInOut" }}
-  className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] shadow-md"
+  className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] shadow-md"
   style={{
     perspective: '1000px',
     transformStyle: 'preserve-3d',
@@ -220,17 +220,17 @@ function HomePage() {
 >
   {/* Front Side - Now includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] bg-tranparent p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] bg-tranparent p-4"
     style={{
       backfaceVisibility: 'hidden',
       zIndex: 10,
     }}
   >
-    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-16">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-16">
     Tailored growth strategies.
     </p>
     <img
-      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/tailored.png"
       alt="Front side"
     />
@@ -238,18 +238,18 @@ function HomePage() {
 
   {/* Back Side - Also includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] bg-transparent p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] bg-transparent p-4"
     style={{
       backfaceVisibility: 'hidden',
       transform: 'rotateY(180deg)',
       zIndex: 5,
     }}
   >
-    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb font-bold lg:pb-16">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-16">
     Tailored growth strategies.
     </p>
     <img
-      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/tailored.png"
       alt="Back side"
     />
@@ -262,7 +262,7 @@ function HomePage() {
     <motion.div
   whileHover={{ rotateY: 180 }}
   transition={{ duration: 0.6, ease: "easeInOut" }}
-  className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
+  className="relative h-64 w-full cursor-pointer rounded border-1 bg-[#00dbba] text-black shadow-md"
   style={{
     perspective: '1000px',
     transformStyle: 'preserve-3d',
@@ -270,17 +270,17 @@ function HomePage() {
 >
   {/* Front Side - Now includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-1 bg-[#00dbba] text-black p-4"
     style={{
       backfaceVisibility: 'hidden',
       zIndex: 10,
     }}
   >
-    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
     Expanding Professional Networks.
     </p>
     <img
-      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/expanding.png"
       alt="Front side"
     />
@@ -288,18 +288,18 @@ function HomePage() {
 
   {/* Back Side - Also includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-1 bg-[#00dbba] text-black p-4"
     style={{
       backfaceVisibility: 'hidden',
       transform: 'rotateY(180deg)',
       zIndex: 5,
     }}
   >
-    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb font-bold lg:pb-10">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
     Expanding Professional Networks.
     </p>
     <img
-      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
       src="../src/assets/InImage/expanding.png"
       alt="Back side"
     />
@@ -312,7 +312,7 @@ function HomePage() {
     <motion.div
   whileHover={{ rotateY: 180 }}
   transition={{ duration: 0.6, ease: "easeInOut" }}
-  className="relative h-64 w-full cursor-pointer rounded border-2 bg-[#00dbba] text-black shadow-md"
+  className="relative h-64 w-full cursor-pointer rounded border-1 bg-[#00dbba] text-black shadow-md"
   style={{
     perspective: '1000px',
     transformStyle: 'preserve-3d',
@@ -320,17 +320,17 @@ function HomePage() {
 >
   {/* Front Side - Now includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 bg-[#00dbba] text-black p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-1 bg-[#00dbba] text-black p-4"
     style={{
       backfaceVisibility: 'hidden',
       zIndex: 10,
     }}
   >
-    <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
     Offering Specialized Industry Knowledge.
     </p>
     <img
-      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start lg:pb-2"
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start lg:pb-2"
       src="../src/assets/InImage/offering.png"
       alt="Front side"
     />
@@ -338,18 +338,227 @@ function HomePage() {
 
   {/* Back Side - Also includes matching border */}
   <motion.div
-    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 bg-[#00dbba] text-black p-4"
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-1 bg-[#00dbba] text-black p-4"
     style={{
       backfaceVisibility: 'hidden',
       transform: 'rotateY(180deg)',
       zIndex: 5,
     }}
   >
-    <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb font-bold lg:pb-10">
+    <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
     Offering Specialized Industry Knowledge.
     </p>
     <img
-      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start lg:pb-2"
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start lg:pb-2"
+      src="../src/assets/InImage/offering.png"
+      alt="Back side"
+    />
+  </motion.div>
+</motion.div>
+
+        <div className="bg-[#e6e6e6] text-black p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:hidden md:grid-cols-4 max-w-5xl w-full pb-5 lg:pl-36">
+        {/* Row 1 */}
+        <div className="bg-[#e6e6e6] p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+    <motion.div
+  whileHover={{ rotateY: 180 }}
+  transition={{ duration: 0.6, ease: "easeInOut" }}
+  className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] shadow-md"
+  style={{
+    perspective: '1000px',
+    transformStyle: 'preserve-3d',
+  }}
+>
+  {/* Front Side - Now includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] bg-tranparent px-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      zIndex: 10,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10 ">
+      Implementing industry-leading practices.
+    </p>
+    <img
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/impliment.png"
+      alt="Front side"
+    />
+  </motion.div>
+
+  {/* Back Side - Also includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] bg-transparent p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      transform: 'rotateY(180deg)',
+      zIndex: 5,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
+      Revolutionizing the industry with innovation.
+    </p>
+    <img
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/impliment.png"
+      alt="Back side"
+    />
+  </motion.div>
+</motion.div>
+
+        <div className="p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+
+    
+        <motion.div
+  whileHover={{ rotateY: 180 }}
+  transition={{ duration: 0.6, ease: "easeInOut" }}
+  className="relative h-64 w-full cursor-pointer rounded border-1 bg-[#00dbba] text-black shadow-md"
+  style={{
+    perspective: '1000px',
+    transformStyle: 'preserve-3d',
+  }}
+>
+  {/* Front Side - Now includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-1 bg-[#00dbba] text-black p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      zIndex: 10,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
+    Expanding Professional Networks.
+    </p>
+    <img
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/expanding.png"
+      alt="Front side"
+    />
+  </motion.div>
+
+  {/* Back Side - Also includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-1 bg-[#00dbba] text-black p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      transform: 'rotateY(180deg)',
+      zIndex: 5,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
+    Expanding Professional Networks.
+    </p>
+    <img
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/expanding.png"
+      alt="Back side"
+    />
+  </motion.div>
+</motion.div>
+    
+
+        {/* Row 2 (Additional boxes for 4+4 layout) */}
+       
+        <motion.div
+  whileHover={{ rotateY: 180 }}
+  transition={{ duration: 0.6, ease: "easeInOut" }}
+  className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] shadow-md"
+  style={{
+    perspective: '1000px',
+    transformStyle: 'preserve-3d',
+  }}
+>
+  {/* Front Side - Now includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] bg-tranparent p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      zIndex: 10,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-16">
+    Tailored growth strategies.
+    </p>
+    <img
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/tailored.png"
+      alt="Front side"
+    />
+  </motion.div>
+
+  {/* Back Side - Also includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] bg-transparent p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      transform: 'rotateY(180deg)',
+      zIndex: 5,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-16">
+    Tailored growth strategies.
+    </p>
+    <img
+      className="h-16 w-16 text-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
+      src="../src/assets/InImage/tailored.png"
+      alt="Back side"
+    />
+  </motion.div>
+</motion.div>
+
+
+        <div className="text-black p-4 rounded shadow-md flex flex-col items-center">
+        </div>
+
+    <motion.div
+  whileHover={{ rotateY: 180 }}
+  transition={{ duration: 0.6, ease: "easeInOut" }}
+  className="relative h-64 w-full cursor-pointer rounded border-1 bg-[#00dbba] text-black shadow-md"
+  style={{
+    perspective: '1000px',
+    transformStyle: 'preserve-3d',
+  }}
+>
+  {/* Front Side - Now includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded border-1 bg-[#00dbba] text-black p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      zIndex: 10,
+    }}
+  >
+    <p className="pb-6 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
+    Offering Specialized Industry Knowledge.
+    </p>
+    <img
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start lg:pb-2"
+      src="../src/assets/InImage/offering.png"
+      alt="Front side"
+    />
+  </motion.div>
+
+  {/* Back Side - Also includes matching border */}
+  <motion.div
+    className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-1 bg-[#00dbba] text-black p-4"
+    style={{
+      backfaceVisibility: 'hidden',
+      transform: 'rotateY(180deg)',
+      zIndex: 5,
+    }}
+  >
+    <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
+    Offering Specialized Industry Knowledge.
+    </p>
+    <img
+      className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start lg:pb-2"
       src="../src/assets/InImage/offering.png"
       alt="Back side"
     />

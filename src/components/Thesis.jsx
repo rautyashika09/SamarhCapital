@@ -139,13 +139,13 @@ const Thesis = () => {
         ease: "easeInOut", 
       }}
       viewport={{ once: true }}
-        className="bg-[#00dbba] text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
+        className="bg-[#00dbba] text-grey-700 text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-br-[75px]">
           <p className="text-center pb-16">
           Availability of 
           technology and skilled 
           labour
           </p>
-          <img src="../src/assets/InImage/screw.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end' />
+          <img src="../src/assets/InImage/screw.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-start' />
         </motion.div>
         <motion.div
        initial={{ scale: 0.5 }} 
@@ -155,18 +155,18 @@ const Thesis = () => {
          ease: "easeInOut", 
        }}
        viewport={{ once: true }}
-        className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-bl-[75px]">
+        className="bg-[#03045e] text-white text-lg lg:text-2xl font-playfairdisplayb pt-8 rounded shadow-md flex flex-col items-center rounded-br-[75px]">
           <p className="text-center pb-16 px-1">
           Evolving business 
           ecosystem
           </p>
-          <img src="../src/assets/InImage/circle.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-end'/>
+          <img src="../src/assets/InImage/circle.png" alt="Tailored growth strategies" className='h-16 w-16 lg:h-24 lg:w-24 p-2 lg:self-start'/>
         </motion.div>
       </div>
 
       {/* Commitment Statement */}
       <div className="text-center my-12">
-        <h2 className="text-lg mx-10 md:text-3xl lg:text-4xl text-start font:gotham uppercase leading-relaxed">
+        <h2 className="text-lg mx-10 md:text-3xl lg:text-3xl text-start font:gotham uppercase leading-relaxed">
           "We are committed to being a trusted partner for unorthodox and emerging entrepreneurs in reshaping the industrial landscape."
         </h2>
       </div> 

@@ -34,11 +34,11 @@ import { motion } from "framer-motion";
                                 zIndex: 10,
                               }}
                             >
-                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
                               Disrupting the status 
                               </p>
                               <img
-                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
                                 src="../src/assets/InImage/beaker.png"
                                 alt="Front side"
                               />
@@ -53,7 +53,7 @@ import { motion } from "framer-motion";
                                 zIndex: 5,
                               }}
                             >
-                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb italic">
                               Supporting 
                               businesses with 
                               fresh perspectives 
@@ -69,7 +69,7 @@ import { motion } from "framer-motion";
               <motion.div
                             whileHover={{ rotateY: 180 }}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
-                            className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] text-black shadow-md"
+                            className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] text-black shadow-md"
                             style={{
                               perspective: '1000px',
                               transformStyle: 'preserve-3d',
@@ -77,18 +77,18 @@ import { motion } from "framer-motion";
                           >
                             {/* Front Side - Now includes matching border */}
                             <motion.div
-                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] text-black p-4"
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] text-black p-4"
                               style={{
                                 backfaceVisibility: 'hidden',
                                 zIndex: 10,
                               }}
                             >
-                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
                               Growth-oriented 
                                entrepreneurs
                               </p>
                               <img
-                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
                                 src="../src/assets/InImage/tailored.png"
                                 alt="Front side"
                               />
@@ -96,14 +96,14 @@ import { motion } from "framer-motion";
                           
                             {/* Back Side - Also includes matching border */}
                             <motion.div
-                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] text-black p-2"
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] text-black p-2"
                               style={{
                                 backfaceVisibility: 'hidden',
                                 transform: 'rotateY(180deg)',
                                 zIndex: 5,
                               }}
                             >
-                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb italic">
                               Partnering with 
           founders focused on 
           sustainable growth.                             </p>
@@ -116,7 +116,7 @@ import { motion } from "framer-motion";
               <motion.div
                             whileHover={{ rotateY: 180 }}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
-                            className="relative h-64 w-full cursor-pointer rounded border-2 border-[#00dbba] text-black shadow-md"
+                            className="relative h-64 w-full cursor-pointer rounded border-[1px] border-solid border-[#00dbba] text-black shadow-md"
                             style={{
                               perspective: '1000px',
                               transformStyle: 'preserve-3d',
@@ -124,17 +124,17 @@ import { motion } from "framer-motion";
                           >
                             {/* Front Side - Now includes matching border */}
                             <motion.div
-                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-2 border-[#00dbba] text-black p-4"
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded border-[1px] border-solid border-[#00dbba] text-black p-4"
                               style={{
                                 backfaceVisibility: 'hidden',
                                 zIndex: 10,
                               }}
                             >
-                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
                               Proven track records
                               </p>
                               <img
-                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                className="h-16 w-16 border-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
                                 src="../src/assets/InImage/impliment.png"
                                 alt="Front side"
                               />
@@ -142,14 +142,14 @@ import { motion } from "framer-motion";
                           
                             {/* Back Side - Also includes matching border */}
                             <motion.div
-                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-2 border-[#00dbba] text-black p-2"
+                              className="absolute inset-0 flex flex-col items-center justify-center rounded-lg border-[1px] border-solid border-[#00dbba] text-black p-2"
                               style={{
                                 backfaceVisibility: 'hidden',
                                 transform: 'rotateY(180deg)',
                                 zIndex: 5,
                               }}
                             >
-                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb italic">
                               Engaging with 
           businesses that have 
           validated concepts 
@@ -179,12 +179,12 @@ import { motion } from "framer-motion";
                                 zIndex: 10,
                               }}
                             >
-                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
                               Scalability potential 
                               </p>
                               <img
-                                className="h-16 w-16 bg-[#03045e] lg:h-20 lg:w-20 self-start"
-                                src="../src/assets/InImage/beaker.png"
+                                className="h-16 w-16 bg-[#03045e] lg:h-20 lg:w-20 lg:self-start"
+                                src="../src/assets/InImage/setting.png"
                                 alt="Front side"
                               />
                             </motion.div>
@@ -198,7 +198,7 @@ import { motion } from "framer-motion";
                                 zIndex: 5,
                               }}
                             >
-                              <p className="pb-4 text-center text-lg lg:text-2xl font-playfairdisplayb italic">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb italic">
                               Supporting teams 
 with strong 
 implementation 
@@ -227,11 +227,11 @@ growth potential.                           </p>
                                 zIndex: 10,
                               }}
                             >
-                              <p className="pb-4 text-center font-bold text-lg lg:text-2xl font-playfairdisplayb lg:pb-10">
+                              <p className="pb-4 text-center text-lg lg:text-xl font-playfairdisplayb lg:pb-10">
                               Beyond metrics
                               </p>
                               <img
-                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 self-start"
+                                className="h-16 w-16 bg-[#00dbba] lg:h-20 lg:w-20 lg:self-start"
                                 src="../src/assets/InImage/basket.png"
                                 alt="Front side"
                               />
@@ -261,7 +261,7 @@ enduring success.                             </p>
           </div> 
       </div>
 
-      <h2 className="text-2xl lg:text-4xl lg:px-40 font-gotham font-thin text-black mt-12 text-center lg:pb-20">
+      <h2 className="text-2xl lg:text-3xl lg:px-40 font-gotham font-thin text-black mt-12 text-center lg:pb-20">
         “EMPOWERING AMBITIOUS ENTREPRENEURS TO UNLOCK THEIR DREAMS AND DRIVE TRANSFORMATIVE CHANGE.”
       </h2>
     </div>

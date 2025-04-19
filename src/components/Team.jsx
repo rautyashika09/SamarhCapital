@@ -31,7 +31,7 @@ const Team = () => {
         whileInView={{opacity:1, x: 0}}
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.7}}
-        className="lg:w-1/3 grid grid-cols-2 p-10 lg:p-2 pr-10">
+        className="lg:w-1/3 grid grid-cols-2 p-10 lg:p-2 pr-10 lg:pr-20">
         <div className="aspect-square flex items-center justify-center rounded-full">
                 <div className="text-[#03045e] transform ">
                   <motion.img
@@ -74,7 +74,7 @@ const Team = () => {
         </motion.div>
 
         {/* Scroll Down Indicator */}
-        <div className="absolute mt-4 bottom-2 lg:bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="absolute mt-4 bottom-2 left-1/2 transform -translate-x-1/2">
 <div className="border border-[#03045e] rounded-full p-4">
              <a href="#investment"><ArrowDown className="w-16 h-16 text-[#03045e] animate-bounce" /></a> 
             </div>
@@ -97,7 +97,7 @@ const Team = () => {
             <img 
               src="../src/assets/investors/Sandeep.JPG"
               alt="Sandeep Shenoy"
-              className="w-48 h-48 rounded-full mb-6"
+              className="w-48 h-48 rounded-full mb-6 lg:ml-20 lg:self-start"
             />
             <div className="text-start">
               <div className="flex items-start justify-start gap-2">
@@ -130,7 +130,7 @@ const Team = () => {
             <img 
               src="../src/assets/investors/Shreyas.jpeg"
               alt="Shreyas Ravikumar"
-              className="w-48 h-48 rounded-full mb-6"
+              className="w-48 h-48 rounded-full mb-6 lg:ml-20 lg:self-start"
             />
             <div className="text-start">
               <div className="flex items-start justify-start gap-2">
@@ -176,7 +176,7 @@ const Team = () => {
             <img 
               src='../src/assets/investors/Mohandas.jpg'
               alt="Mohandas Pai"
-              className="w-48 h-48 rounded-full mb-6"
+              className="w-48 h-48 rounded-full mb-6 lg:ml-20 lg:self-start"
             />
             <div className="text-start">
             <div className="flex items-start justify-start gap-2">
@@ -204,7 +204,7 @@ const Team = () => {
             <img 
               src="../src/assets/investors/Ulas.jpg"
               alt="K Ullas Kamath"
-              className="w-48 h-48 rounded-full mb-6"
+              className="w-48 h-48 rounded-full mb-6 lg:ml-20 lg:self-start"
             />
             <div className="text-start">
               <div className="flex items-start justify-start gap-2">

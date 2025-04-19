@@ -124,6 +124,10 @@ const Charter = () => {
       </div>
 </div>
 </section>
+
+<p className="mt-8 text-3xl lg:text-4xl lg:pb-10 font-playfairdisplay text-gray-800">
+              Investing in the future: Backing companies poised to redefine their industries.
+            </p>
 </div>
     </div>
   )
